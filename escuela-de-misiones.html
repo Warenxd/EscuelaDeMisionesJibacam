@@ -25,9 +25,20 @@
             },
         };
     </script>
+
+    <style>
+        .bg-patron {
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2d2d2' fill-opacity='0.34'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
-<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+<body class="bg-patron text-slate-800 font-sans leading-relaxed">
 
     <!-- HERO -->
     <section
@@ -66,11 +77,11 @@
     </section>
 
     <!-- BIENVENIDO A LA ESCUELA DE MISIONES -->
-    <section class="py-24 px-4 bg-white reveal">
+    <section class="py-24 px-4 bg-white/80 reveal">
         <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
             <div class="space-y-6">
                 <h2 class="text-7xl lg:text-4xl font-black uppercase text-gray-900 tracking-tight leading-tight">
-                    Bienvenido a la Escuela de Misiones de Jibacam
+                    Bienvenido a la <br>Escuela de Misiones <br>de Jibacam
                 </h2>
                 <div class="h-1.5 w-32 bg-blue-600 rounded-full"></div>
                 <div class="space-y-4 text-4xl lg:text-lg text-gray-700 leading-relaxed font-light">
@@ -101,9 +112,9 @@
     </section>
 
     <!-- CARACTERISTICAS DE LA ESCUELA -->
-    <section class="py-24 px-4 bg-slate-50 reveal">
-        <div class="max-w-6xl mx-auto">
+    <section class="py-24 px-4 bg-slate-50/80 reveal">
 
+        <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-7xl lg:text-4xl font-black uppercase text-gray-900 tracking-tight mb-4">
                     Características de la Escuela
@@ -119,15 +130,15 @@
                 <div
                     class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl transition-all group">
                     <div
-                        class="w-24 h-24 lg:w-14 lg:h-14 mb-6 rounded-xl bg-blue-600 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                        class="w-24 h-24 lg:w-14 lg:h-14 mb-4 rounded-xl bg-blue-600 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-16 h-16 lg:w-8 lg:h-8">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
                         </svg>
                     </div>
-                    <h3 class="text-5xl lg:text-xl font-bold mb-3 text-gray-900">100% Online</h3>
-                    <p class="text-gray-600 text-4xl lg:text-lg leading-relaxed">
+                    <h3 class="text-5xl lg:text-xl font-bold mb-2 text-gray-900">100% Online</h3>
+                    <p class="text-gray-600 text-4xl lg:text-base leading-relaxed">
                         Estudia desde cualquier lugar del mundo con nuestro programa asíncronico
                         en la plataforma digital con acceso a videos, lecturas y tareas
                         practicas completamente en línea.
@@ -137,15 +148,15 @@
                 <div
                     class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl transition-all group">
                     <div
-                        class="w-24 h-24 lg:w-14 lg:h-14 mb-6 rounded-xl bg-purple-600 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                        class="w-24 h-24 lg:w-14 lg:h-14 mb-4 rounded-xl bg-purple-600 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-16 h-16 lg:w-8 lg:h-8">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
                         </svg>
                     </div>
-                    <h3 class="text-5xl lg:text-xl font-bold mb-3 text-gray-900">Excelencia Académica</h3>
-                    <p class="text-gray-600 text-4xl lg:text-lg leading-relaxed">
+                    <h3 class="text-5xl lg:text-xl font-bold mb-2 text-gray-900">Excelencia Académica</h3>
+                    <p class="text-gray-600 text-4xl lg:text-base leading-relaxed">
                         Instructores y maestros con experiencia real en el campo transcultural y
                         materias diseñadas para responder a desafíos concretos del ministerio.
                     </p>
@@ -154,15 +165,15 @@
                 <div
                     class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl transition-all group">
                     <div
-                        class="w-24 h-24 lg:w-14 lg:h-14 mb-6 rounded-xl bg-green-600 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                        class="w-24 h-24 lg:w-14 lg:h-14 mb-4 rounded-xl bg-green-600 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-16 h-16 lg:w-8 lg:h-8">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-5xl lg:text-xl font-bold mb-3 text-gray-900">Comunidad y Apoyo</h3>
-                    <p class="text-gray-600 text-4xl lg:text-lg leading-relaxed">
+                    <h3 class="text-5xl lg:text-xl font-bold mb-2 text-gray-900">Comunidad y Apoyo</h3>
+                    <p class="text-gray-600 text-4xl lg:text-base leading-relaxed">
                         Acompañamiento acádemico mediante grupos y encuentros por Zoom para seguimiento
                         y resolución de dudas de los estudiantes.
                     </p>
@@ -173,7 +184,7 @@
     </section>
 
     <!-- MENSAJE DEL DIRECTOR -->
-    <section class="bg-white border-y reveal">
+    <section class="bg-white/70 border-y reveal">
         <div class="w-full max-w-7xl mx-auto px-6 py-20 flex flex-col items-center">
             <h3 class="text-7xl tracking-tight lg:text-4xl font-black uppercase mb-4">
                 Mensaje del Director
@@ -183,14 +194,16 @@
                 Video de nuestro Director presentando la misión y visión de la escuela
             </p>
             <div class="w-full max-w-4xl lg:max-w-4xl aspect-video bg-slate-200 rounded-lg overflow-hidden shadow">
-                <iframe class="w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen>
+                <iframe class="w-full h-full"
+                    src="https://jibacam.net/wp-content/uploads/2026/01/WhatsApp-Video-2026-01-19-at-21.34.59.mp4"
+                    allowfullscreen>
                 </iframe>
             </div>
         </div>
     </section>
 
     <!-- EQUIPO DIRECTIVO -->
-    <section class="bg-slate-50 border-t border-slate-200 reveal">
+    <section class="bg-slate-50/60 border-t border-slate-200 reveal">
         <div class="max-w-7xl mx-auto px-6 py-12">
 
             <div class="text-center mb-8">
@@ -289,8 +302,8 @@
     </section>
 
 
-    <!-- REQUISITOS Y ADMISIÓN -->
-    <section class="bg-white border-t border-slate-200 reveal pb-20">
+    <!-- ESCUELA DE MISIONES -->
+    <section class="bg-white/80 border-t border-slate-200 reveal pb-20">
         <div class="max-w-7xl mx-auto px-6">
 
             <div class="flex justify-center">
@@ -299,27 +312,33 @@
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-4">
-
                 <div>
                     <p class="text-3xl lg:text-sm uppercase tracking-[0.3em] text-[#1965e9] font-bold mb-3">
                         Admisión 2026
                     </p>
-
                     <h3 class="text-7xl lg:text-5xl font-black text-slate-900 tracking-tight mb-6">
                         ESCUELA DE<br /><span class="text-[#1965e9]">MISIONES</span>
                     </h3>
-
                     <p class="text-4xl lg:text-xl  text-slate-600 leading-relaxed font-light mb-6">
                         El programa de la Escuela de Misiones de Jibacam está diseñado para personas
                         con un <strong class="text-slate-900 font-bold">llamado claro al servicio</strong> misionero,
                         comprometidas con una formación
                         académica y espiritual integral.
                     </p>
+                    <!-- BOTONES -->
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <a href="#inscripcion"
+                            class="inline-flex items-center justify-center bg-[#1965e9] text-white px-8 py-4 rounded-none font-bold uppercase tracking-wide hover:bg-blue-700 transition-colors">
+                            Inscribirse Ahora
+                        </a>
 
-                    <div class="h-1.5 w-40 bg-[#1965e9] rounded-full mb-10"></div>
-
+                        <a href="#malla"
+                            class="inline-flex items-center justify-center border border-slate-300 text-slate-600 px-8 py-4 rounded-none font-bold uppercase tracking-wide hover:bg-slate-50 transition-colors">
+                            Ver Malla
+                        </a>
+                    </div>
+                    <div class="h-1.5 w-64 bg-[#1965e9] rounded-full mb-10"></div>
                     <div class="grid sm:grid-cols-2 gap-6">
-
                         <div
                             class="p-5 rounded-2xl bg-white border border-slate-200 flex items-start gap-4 hover:shadow-md transition-all">
                             <div
@@ -329,7 +348,6 @@
                                         d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
                             </div>
-
                             <div>
                                 <h4 class="text-lg font-extrabold text-slate-800 mb-1">
                                     Modalidad
@@ -339,7 +357,6 @@
                                 </p>
                             </div>
                         </div>
-
                         <div
                             class="p-5 rounded-2xl bg-white border border-slate-200 flex items-start gap-4 hover:shadow-md transition-all">
                             <div
@@ -349,7 +366,6 @@
                                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                             </div>
-
                             <div>
                                 <h4 class="text-lg font-extrabold text-slate-800 mb-1">
                                     Duración
@@ -359,7 +375,6 @@
                                 </p>
                             </div>
                         </div>
-
                         <div
                             class="p-5 rounded-2xl bg-white border border-slate-200 flex items-start gap-4 hover:shadow-md transition-all">
                             <div
@@ -369,7 +384,6 @@
                                         d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                                 </svg>
                             </div>
-
                             <div>
                                 <h4 class="text-lg font-extrabold text-slate-800 mb-1">
                                     Inicio de Clases
@@ -379,7 +393,6 @@
                                 </p>
                             </div>
                         </div>
-
                         <div
                             class="p-5 rounded-2xl bg-white border border-slate-200 flex items-start gap-4 hover:shadow-md transition-all">
                             <div
@@ -389,25 +402,34 @@
                                         d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                             </div>
-
                             <div>
                                 <h4 class="text-lg font-extrabold text-slate-800 mb-1">
                                     Costo
                                 </h4>
                                 <p class="text-base font-medium text-slate-600">
-                                    $20 USD <span class="text-slate-400 text-sm">/ curso</span>
+                                    $20 USD <span class="text-slate-400 text-sm">/ asignatura</span>
                                 </p>
                             </div>
                         </div>
-
                     </div>
                 </div>
+                <!-- COLUMNA DERECHA -->
+                <div class="space-y-2">
+                    <!-- BLOQUE PROCESO DE ADMISIÓN -->
+                    <div class="flex justify-end items-end border-b-2 border-slate-100 pb-2">
 
-                <div>
+                        <div class="text-right">
+                            <span class="block text-6xl font-black text-slate-100 leading-none">2026</span>
+                            <span class="font-bold text-[#1965e9] uppercase tracking-widest text-sm">
+                                Proceso de Admisión
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- IMAGEN -->
                     <img src="assets/e8e28edce07b2e96f39c4db70fa25d2c.jpg" alt="Admisión EMJ"
                         class="w-full rounded-3xl shadow-xl object-cover aspect-[4/3]" />
                 </div>
-
             </div>
 
             <!-- REQUISITOS DE INGRESO -->
@@ -448,11 +470,12 @@
                         <li class="flex gap-4 items-start">
                             <div
                                 class="flex-shrink-0 w-10 h-10 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
-                                    viewBox="0 0 24 24">
+                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                                 </svg>
+
                             </div>
                             <div>
                                 <h5 class="text-base font-extrabold text-slate-800">Carta de Autorización</h5>
@@ -468,7 +491,7 @@
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                        d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
                                 </svg>
                             </div>
                             <div>
@@ -482,11 +505,12 @@
                         <li class="flex gap-4 items-start">
                             <div
                                 class="flex-shrink-0 w-10 h-10 rounded-lg bg-amber-50 flex items-center justify-center text-amber-600">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
-                                    viewBox="0 0 24 24">
+                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S12 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S12 3 12 3m0-6a9 9 0 00-6.862 13.29M21 12a9 9 0 01-13.291 6.862" />
+                                        d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
                                 </svg>
+
                             </div>
                             <div>
                                 <h5 class="text-base font-extrabold text-slate-800">Proceso Formativo</h5>
@@ -517,10 +541,11 @@
                     </ul>
                 </div>
 
+                <!-- LO QUE APRENDERÁS -->
                 <div
                     class="bg-slate-50 border border-slate-200 rounded-3xl p-8 md:p-10 shadow-inner h-full flex flex-col">
 
-                    <h4 class="text-2xl font-black text-slate-900 mb-8 flex items-center gap-4">
+                    <h4 class="text-2xl font-black text-slate-900 mb-4 flex items-center gap-4">
                         <span
                             class="w-12 h-12 rounded-2xl bg-white shadow-sm text-[#1965e9] flex items-center justify-center shrink-0">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -531,7 +556,7 @@
                         Lo que Aprenderás
                     </h4>
 
-                    <ul class="space-y-3 flex-1">
+                    <ul class="space-y-1 flex-1">
                         <li class="flex items-start gap-4">
                             <div class="mt-1 flex-shrink-0 text-emerald-500">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
@@ -541,7 +566,7 @@
                                 </svg>
                             </div>
                             <p class="text-slate-600 font-medium text-[15px] leading-relaxed">
-                                <strong class="text-slate-800 font-extrabold block mb-1">Empatía Cultural</strong>
+                                <strong class="text-slate-800 font-extrabold block">Empatía Cultural</strong>
                                 Desarrollar empatía cultural, comprendiendo y respetando cosmovisiones distintas.
                             </p>
                         </li>
@@ -555,7 +580,7 @@
                                 </svg>
                             </div>
                             <p class="text-slate-600 font-medium text-[15px] leading-relaxed">
-                                <strong class="text-slate-800 font-extrabold block mb-1">Fundamento Bíblico</strong>
+                                <strong class="text-slate-800 font-extrabold block">Fundamento Bíblico</strong>
                                 Entender la misión mundial, su fundamento bíblico y su impacto global.
                             </p>
                         </li>
@@ -569,7 +594,7 @@
                                 </svg>
                             </div>
                             <p class="text-slate-600 font-medium text-[15px] leading-relaxed">
-                                <strong class="text-slate-800 font-extrabold block mb-1">Fonética Aplicada</strong>
+                                <strong class="text-slate-800 font-extrabold block">Fonética Aplicada</strong>
                                 Dominar fundamentos de fonética para mejorar la pronunciación de nuevos idiomas.
                             </p>
                         </li>
@@ -583,7 +608,7 @@
                                 </svg>
                             </div>
                             <p class="text-slate-600 font-medium text-[15px] leading-relaxed">
-                                <strong class="text-slate-800 font-extrabold block mb-1">Plantación de Iglesias</strong>
+                                <strong class="text-slate-800 font-extrabold block">Plantación de Iglesias</strong>
                                 Diseñar y desarrollar plantación de iglesias transculturales con enfoque bíblico.
                             </p>
                         </li>
@@ -597,7 +622,7 @@
                                 </svg>
                             </div>
                             <p class="text-slate-600 font-medium text-[15px] leading-relaxed">
-                                <strong class="text-slate-800 font-extrabold block mb-1">Antropología</strong>
+                                <strong class="text-slate-800 font-extrabold block">Antropología</strong>
                                 Analizar culturas desde la antropología, identificando valores y creencias clave.
                             </p>
                         </li>
@@ -608,154 +633,238 @@
     </section>
 
     <!-- PROGRAMA DE ESTUDIOS -->
-    <section class="bg-white border-t border-slate-200 py-24">
-    <div class="max-w-6xl mx-auto px-6">
+    <section id="malla" class="bg-white border-t border-slate-200 py-24">
+        <div class="max-w-6xl mx-auto px-6">
 
-        <div class="text-center mb-16">
-            <h3 class="text-3xl md:text-4xl font-black uppercase text-slate-900 tracking-tight mb-4">
-                Plan de Estudios
-            </h3>
-            <p class="text-slate-600 text-lg">
-                8 Asignaturas fundamentales para la formación misionera.
-            </p>
-        </div>
+            <div class="text-center mb-16">
+                <h3 class="text-3xl md:text-4xl font-black uppercase text-slate-900 tracking-tight mb-4">
+                    Plan de Estudios
+                </h3>
+                <div class="mx-auto h-1.5 w-64 bg-[#1965e9] rounded-full mb-4"></div>
+                <p class="text-slate-600 text-lg">
+                    8 Asignaturas fundamentales para la formación misionera.
+                </p>
+            </div>
 
-        <div class="border border-slate-200 rounded-xl bg-slate-200 overflow-hidden shadow-xl shadow-slate-100/50">
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-px">
+            <div class="border border-slate-200 rounded-xl bg-slate-200 overflow-hidden shadow-xl shadow-slate-100/50">
 
-                <div class="bg-white aspect-[4/3] p-6 flex flex-col items-center justify-center text-center group hover:bg-blue-50/30 transition-all duration-300 relative overflow-hidden">
-                    <div class="absolute top-0 left-0 w-1.5 h-full bg-blue-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
-                    
-                    <span class="absolute top-2 right-4 text-4xl font-black text-slate-300 group-hover:text-blue-200 transition-colors select-none">01</span>
-                    
-                    <div class="mb-4 p-3 rounded-full bg-blue-50 text-blue-600 group-hover:scale-110 transition-transform duration-300 relative z-10">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-px">
+
+                    <div
+                        class="bg-white aspect-[4/3] p-6 flex flex-col items-center justify-center text-center group hover:bg-blue-50/30 transition-all duration-300 relative overflow-hidden">
+                        <div
+                            class="absolute top-0 left-0 w-1.5 h-full bg-blue-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300">
+                        </div>
+
+                        <span
+                            class="absolute top-2 right-4 text-4xl font-black text-slate-300 group-hover:text-blue-200 transition-colors select-none">01</span>
+
+                        <div
+                            class="mb-4 p-3 rounded-full bg-blue-50 text-blue-600 group-hover:scale-110 transition-transform duration-300 relative z-10">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                            </svg>
+                        </div>
+                        <h4
+                            class="text-lg font-bold text-slate-800 uppercase tracking-tight group-hover:text-blue-600 transition-colors relative z-10">
+                            Empatía Cultural
+                        </h4>
                     </div>
-                    <h4 class="text-lg font-bold text-slate-800 uppercase tracking-tight group-hover:text-blue-600 transition-colors relative z-10">
-                        Empatía Cultural
-                    </h4>
-                </div>
 
-                <div class="bg-white aspect-[4/3] p-6 flex flex-col items-center justify-center text-center group hover:bg-indigo-50/30 transition-all duration-300 relative overflow-hidden">
-                     <div class="absolute top-0 left-0 w-1.5 h-full bg-indigo-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
-                     <span class="absolute top-2 right-4 text-4xl font-black text-slate-300 group-hover:text-indigo-200 transition-colors select-none">02</span>
-                    
-                    <div class="mb-4 p-3 rounded-full bg-indigo-50 text-indigo-600 group-hover:scale-110 transition-transform duration-300 relative z-10">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" /></svg>
+                    <div
+                        class="bg-white aspect-[4/3] p-6 flex flex-col items-center justify-center text-center group hover:bg-indigo-50/30 transition-all duration-300 relative overflow-hidden">
+                        <div
+                            class="absolute top-0 left-0 w-1.5 h-full bg-indigo-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300">
+                        </div>
+                        <span
+                            class="absolute top-2 right-4 text-4xl font-black text-slate-300 group-hover:text-indigo-200 transition-colors select-none">02</span>
+
+                        <div
+                            class="mb-4 p-3 rounded-full bg-indigo-50 text-indigo-600 group-hover:scale-110 transition-transform duration-300 relative z-10">
+                            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m6.115 5.19.319 1.913A6 6 0 0 0 8.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 0 0 2.288-4.042 1.087 1.087 0 0 0-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 0 1-.98-.314l-.295-.295a1.125 1.125 0 0 1 0-1.591l.13-.132a1.125 1.125 0 0 1 1.3-.21l.603.302a.809.809 0 0 0 1.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 0 0 1.528-1.732l.146-.292M6.115 5.19A9 9 0 1 0 17.18 4.64M6.115 5.19A8.965 8.965 0 0 1 12 3c1.929 0 3.716.607 5.18 1.64" />
+                            </svg>
+
+                        </div>
+                        <h4
+                            class="text-lg font-bold text-slate-800 uppercase tracking-tight group-hover:text-indigo-600 transition-colors relative z-10">
+                            Misión Mundial
+                        </h4>
                     </div>
-                    <h4 class="text-lg font-bold text-slate-800 uppercase tracking-tight group-hover:text-indigo-600 transition-colors relative z-10">
-                        Misión Mundial
-                    </h4>
-                </div>
 
-                <div class="bg-white aspect-[4/3] p-6 flex flex-col items-center justify-center text-center group hover:bg-emerald-50/30 transition-all duration-300 relative overflow-hidden">
-                     <div class="absolute top-0 left-0 w-1.5 h-full bg-emerald-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
-                     <span class="absolute top-2 right-4 text-4xl font-black text-slate-300 group-hover:text-emerald-200 transition-colors select-none">03</span>
-                    
-                    <div class="mb-4 p-3 rounded-full bg-emerald-50 text-emerald-600 group-hover:scale-110 transition-transform duration-300 relative z-10">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" /></svg>
+                    <div
+                        class="bg-white aspect-[4/3] p-6 flex flex-col items-center justify-center text-center group hover:bg-emerald-50/30 transition-all duration-300 relative overflow-hidden">
+                        <div
+                            class="absolute top-0 left-0 w-1.5 h-full bg-emerald-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300">
+                        </div>
+                        <span
+                            class="absolute top-2 right-4 text-4xl font-black text-slate-300 group-hover:text-emerald-200 transition-colors select-none">03</span>
+
+                        <div
+                            class="mb-4 p-3 rounded-full bg-emerald-50 text-emerald-600 group-hover:scale-110 transition-transform duration-300 relative z-10">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                            </svg>
+                        </div>
+                        <h4
+                            class="text-lg font-bold text-slate-800 uppercase tracking-tight group-hover:text-emerald-600 transition-colors relative z-10">
+                            Antropología Cultural
+                        </h4>
                     </div>
-                    <h4 class="text-lg font-bold text-slate-800 uppercase tracking-tight group-hover:text-emerald-600 transition-colors relative z-10">
-                        Antropología Cultural
-                    </h4>
-                </div>
 
-                <div class="bg-white aspect-[4/3] p-6 flex flex-col items-center justify-center text-center group hover:bg-amber-50/30 transition-all duration-300 relative overflow-hidden">
-                     <div class="absolute top-0 left-0 w-1.5 h-full bg-amber-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
-                     <span class="absolute top-2 right-4 text-4xl font-black text-slate-300 group-hover:text-amber-200 transition-colors select-none">04</span>
-                    
-                    <div class="mb-4 p-3 rounded-full bg-amber-50 text-amber-600 group-hover:scale-110 transition-transform duration-300 relative z-10">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" /></svg>
+                    <div
+                        class="bg-white aspect-[4/3] p-6 flex flex-col items-center justify-center text-center group hover:bg-amber-50/30 transition-all duration-300 relative overflow-hidden">
+                        <div
+                            class="absolute top-0 left-0 w-1.5 h-full bg-amber-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300">
+                        </div>
+                        <span
+                            class="absolute top-2 right-4 text-4xl font-black text-slate-300 group-hover:text-amber-200 transition-colors select-none">04</span>
+
+                        <div
+                            class="mb-4 p-3 rounded-full bg-amber-50 text-amber-600 group-hover:scale-110 transition-transform duration-300 relative z-10">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                            </svg>
+                        </div>
+                        <h4
+                            class="text-lg font-bold text-slate-800 uppercase tracking-tight group-hover:text-amber-600 transition-colors relative z-10">
+                            Lingüística
+                        </h4>
                     </div>
-                    <h4 class="text-lg font-bold text-slate-800 uppercase tracking-tight group-hover:text-amber-600 transition-colors relative z-10">
-                        Lingüística
-                    </h4>
-                </div>
 
-                <div class="bg-white aspect-[4/3] p-6 flex flex-col items-center justify-center text-center group hover:bg-rose-50/30 transition-all duration-300 relative overflow-hidden">
-                     <div class="absolute top-0 left-0 w-1.5 h-full bg-rose-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
-                     <span class="absolute top-2 right-4 text-4xl font-black text-slate-300 group-hover:text-rose-200 transition-colors select-none">05</span>
-                    
-                    <div class="mb-4 p-3 rounded-full bg-rose-50 text-rose-500 group-hover:scale-110 transition-transform duration-300 relative z-10">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
+                    <div
+                        class="bg-white aspect-[4/3] p-6 flex flex-col items-center justify-center text-center group hover:bg-rose-50/30 transition-all duration-300 relative overflow-hidden">
+                        <div
+                            class="absolute top-0 left-0 w-1.5 h-full bg-rose-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300">
+                        </div>
+                        <span
+                            class="absolute top-2 right-4 text-4xl font-black text-slate-300 group-hover:text-rose-200 transition-colors select-none">05</span>
+                        <div
+                            class="mb-4 p-3 rounded-full bg-rose-50 text-rose-500 group-hover:scale-110 transition-transform duration-300 relative z-10">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                            </svg>
+                        </div>
+                        <h4
+                            class="text-lg font-bold text-slate-800 uppercase tracking-tight group-hover:text-rose-600 transition-colors relative z-10">
+                            Alfabetización
+                        </h4>
                     </div>
-                    <h4 class="text-lg font-bold text-slate-800 uppercase tracking-tight group-hover:text-rose-600 transition-colors relative z-10">
-                        Alfabetización
-                    </h4>
-                </div>
-
-                <div class="bg-white aspect-[4/3] p-6 flex flex-col items-center justify-center text-center group hover:bg-cyan-50/30 transition-all duration-300 relative overflow-hidden">
-                     <div class="absolute top-0 left-0 w-1.5 h-full bg-cyan-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
-                     <span class="absolute top-2 right-4 text-4xl font-black text-slate-300 group-hover:text-cyan-200 transition-colors select-none">06</span>
-                    
-                    <div class="mb-4 p-3 rounded-full bg-cyan-50 text-cyan-600 group-hover:scale-110 transition-transform duration-300 relative z-10">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" /></svg>
+                    <div
+                        class="bg-white aspect-[4/3] p-6 flex flex-col items-center justify-center text-center group hover:bg-cyan-50/30 transition-all duration-300 relative overflow-hidden">
+                        <div
+                            class="absolute top-0 left-0 w-1.5 h-full bg-cyan-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300">
+                        </div>
+                        <span
+                            class="absolute top-2 right-4 text-4xl font-black text-slate-300 group-hover:text-cyan-200 transition-colors select-none">06</span>
+                        <div
+                            class="mb-4 p-3 rounded-full bg-cyan-50 text-cyan-600 group-hover:scale-110 transition-transform duration-300 relative z-10">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
+                            </svg>
+                        </div>
+                        <h4
+                            class="text-lg font-bold text-slate-800 uppercase tracking-tight group-hover:text-cyan-600 transition-colors relative z-10">
+                            Adquisición de <br> 2da Lengua
+                        </h4>
                     </div>
-                    <h4 class="text-lg font-bold text-slate-800 uppercase tracking-tight group-hover:text-cyan-600 transition-colors relative z-10">
-                        Adquisición de <br> 2da Lengua
-                    </h4>
-                </div>
-
-                <div class="bg-white aspect-[4/3] p-6 flex flex-col items-center justify-center text-center group hover:bg-violet-50/30 transition-all duration-300 relative overflow-hidden">
-                     <div class="absolute top-0 left-0 w-1.5 h-full bg-violet-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
-                     <span class="absolute top-2 right-4 text-4xl font-black text-slate-300 group-hover:text-violet-200 transition-colors select-none">07</span>
-                    
-                    <div class="mb-4 p-3 rounded-full bg-violet-50 text-violet-600 group-hover:scale-110 transition-transform duration-300 relative z-10">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
+                    <div
+                        class="bg-white aspect-[4/3] p-6 flex flex-col items-center justify-center text-center group hover:bg-violet-50/30 transition-all duration-300 relative overflow-hidden">
+                        <div
+                            class="absolute top-0 left-0 w-1.5 h-full bg-violet-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300">
+                        </div>
+                        <span
+                            class="absolute top-2 right-4 text-4xl font-black text-slate-300 group-hover:text-violet-200 transition-colors select-none">07</span>
+                        <div
+                            class="mb-4 p-3 rounded-full bg-violet-50 text-violet-600 group-hover:scale-110 transition-transform duration-300 relative z-10">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+                            </svg>
+                        </div>
+                        <h4
+                            class="text-lg font-bold text-slate-800 uppercase tracking-tight group-hover:text-violet-600 transition-colors relative z-10">
+                            Fonética
+                        </h4>
                     </div>
-                    <h4 class="text-lg font-bold text-slate-800 uppercase tracking-tight group-hover:text-violet-600 transition-colors relative z-10">
-                        Fonética
-                    </h4>
-                </div>
-
-                <div class="bg-white aspect-[4/3] p-6 flex flex-col items-center justify-center text-center group hover:bg-orange-50/30 transition-all duration-300 relative overflow-hidden">
-                     <div class="absolute top-0 left-0 w-1.5 h-full bg-orange-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
-                     <span class="absolute top-2 right-4 text-4xl font-black text-slate-300 group-hover:text-orange-200 transition-colors select-none">08</span>
-                    
-                    <div class="mb-4 p-3 rounded-full bg-orange-50 text-orange-600 group-hover:scale-110 transition-transform duration-300 relative z-10">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h-7.5V10.75M2.25 21h1.5m18 0h-1.5M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" /></svg>
+                    <div
+                        class="bg-white aspect-[4/3] p-6 flex flex-col items-center justify-center text-center group hover:bg-orange-50/30 transition-all duration-300 relative overflow-hidden">
+                        <div
+                            class="absolute top-0 left-0 w-1.5 h-full bg-orange-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300">
+                        </div>
+                        <span
+                            class="absolute top-2 right-4 text-4xl font-black text-slate-300 group-hover:text-orange-200 transition-colors select-none">08</span>
+                        <div
+                            class="mb-4 p-3 rounded-full bg-orange-50 text-orange-600 group-hover:scale-110 transition-transform duration-300 relative z-10">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h-7.5V10.75M2.25 21h1.5m18 0h-1.5M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
+                            </svg>
+                        </div>
+                        <h4
+                            class="text-lg font-bold text-slate-800 uppercase tracking-tight group-hover:text-orange-600 transition-colors relative z-10">
+                            Plantación de <br> Iglesias Transculturales
+                        </h4>
                     </div>
-                    <h4 class="text-lg font-bold text-slate-800 uppercase tracking-tight group-hover:text-orange-600 transition-colors relative z-10">
-                        Plantación de <br> Iglesias Transculturales
-                    </h4>
                 </div>
-
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- INSCRIPCIÓN -->
-    <section class="bg-[#1965e9] py-24 relative overflow-hidden reveal text-white">
-        <div class="absolute inset-0 bg-gradient-to-tr from-blue-700/50 to-transparent pointer-events-none"></div>
-        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
-            <h2 class="text-7xl lg:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">
+    <section id="inscripcion" class="relative py-24 overflow-hidden reveal text-white bg-[#1965e9]">
+        <!-- FONDO -->
+        <div class="absolute inset-0 bg-[url('assets/students.jpeg')] bg-cover bg-center">
+        </div>
+        <!-- OVERLAY -->
+        <div class="absolute inset-0 bg-[#1965e9]/85">
+        </div>
+        <!-- GRADIENT -->
+        <div class="absolute inset-0 bg-gradient-to-tr from-blue-900/40 to-transparent pointer-events-none">
+        </div>
+        <!-- CONTENIDO -->
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-7xl lg:text-4xl font-black uppercase mb-6 tracking-tight leading-tight">
                 ¿Deseas inscribirte?
             </h2>
             <div class="h-1.5 w-20 bg-white/30 mx-auto rounded-full mb-8"></div>
             <p class="text-4xl lg:text-xl text-blue-50 mb-12 leading-relaxed max-w-2xl mx-auto font-light">
-                Si cumples con los requisitos y sientes el llamado al servicio misionero, el proceso de inscripción es
+                Si cumples con los requisitos y sientes el llamado al servicio
+                misionero, el proceso de inscripción es
                 <strong class="text-white font-semibold">personal y guiado</strong>.
+                <br>
                 Queremos acompañarte en este paso de fe.
             </p>
+            <!-- TARJETA -->
             <div
                 class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 md:p-12 shadow-xl relative overflow-hidden group">
-                <div
-                    class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-[200%] group-hover:translate-x-[200%] transition-transform duration-1000 pointer-events-none z-0">
-                </div>
+                <!-- CONTENIDO -->
                 <div class="flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
                     <div class="flex items-center gap-5 text-left">
                         <div class="relative flex-shrink-0">
                             <div class="absolute inset-0 bg-white/30 rounded-full blur-md animate-pulse"></div>
                             <img src="assets/pr_aryane.jpeg" alt="Aryanne"
-                                class="relative w-24 h-24 lg:w-16 lg:h-16 rounded-full border-[3px] border-white/80 object-cover shadow-sm">
+                                class="relative w-24 h-24 lg:w-24 lg:h-24 rounded-full border-[3px] border-white/80 object-cover shadow-sm">
                         </div>
                         <div>
-                            <p class="text-blue-100 text-xl lg:text-sm font-medium uppercase tracking-wider mb-1">
+                            <p class="text-blue-100 text-xl lg:text-sm font-bold uppercase tracking-wider mb-1">
                                 Admisión y
                                 Consultas</p>
-                            <p class="font-bold text-white text-3xl lg:text-xl">Habla con Pr. Aryanne</p>
+                            <p class="font-bold text-white text-3xl lg:text-xl">Habla con Pra. Aryanne</p>
                             <p class="text-blue-50/80 text-xl lg:text-sm mt-1 italic">"Te guiaré en todo el proceso"</p>
                         </div>
                     </div>
@@ -769,7 +878,7 @@
                             <path
                                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                         </svg>
-                        <span class="relative z-10 text-lg">Iniciar Inscripción</span>
+                        <span class="relative z-10 font-extrabold text-lg">Iniciar Inscripción</span>
                     </a>
                 </div>
             </div>
@@ -779,119 +888,264 @@
     <!-- PREGUNTAS FRECUENTES -->
     <section class="py-16 px-4 bg-gradient-to-b from-white to-gray-50 reveal">
         <div class="max-w-4xl mx-auto">
-
             <div class="text-center mb-12">
-                <h2 class="text-5xl mb-4 text-gray-900 font-bold tracking-tight">
+                <h2 class="text-4xl mb-4 text-gray-900 font-black uppercase tracking-tight">
                     Preguntas Frecuentes
                 </h2>
                 <p class="text-gray-600 text-lg max-w-2xl mx-auto">
                     Encuentra respuestas a las preguntas más comunes sobre nuestro programa
                 </p>
             </div>
-
             <div class="space-y-4">
 
-                <details class="border-2 border-gray-200 rounded-xl shadow-md p-6">
-                    <summary class="cursor-pointer font-semibold text-xl flex justify-between">
-                        ¿El programa es completamente en línea?
-                        <span>⌄</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700">
-                        Sí, el programa es 100% online, permitiéndote estudiar desde cualquier lugar del mundo.
-                    </p>
-                </details>
 
-                <details class="border-2 border-gray-200 rounded-xl shadow-md p-6">
-                    <summary class="cursor-pointer font-semibold text-xl flex justify-between">
-                        ¿Solo miembros de la Iglesia Wesleyana pueden inscribirse?
-                        <span>⌄</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700">
-                        No, si bien la EMJ está dirigida a miembros de la Iglesia Wesleyana, también podemos recibir
-                        creyentes de organizaciones hermanas que necesitan la capacitación.
-                    </p>
-                </details>
+                <!-- Accordion Item 1 -->
+                <div class="border-b border-slate-200">
+                    <button onclick="toggleAccordion(1)"
+                        class="w-full flex justify-between items-center py-5 text-slate-800">
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-7 h-7 text-indigo-800">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                            </svg>
+                            <span class="font-bold text-xl text-left">¿El programa es completamente en línea?</span>
+                        </div>
+                        <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                class="w-4 h-4">
+                                <path
+                                    d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="pb-5 text-base text-slate-700">
+                            Sí, el programa es 100% online, permitiéndote estudiar desde cualquier lugar del mundo.
+                        </div>
+                    </div>
+                </div>
 
-                <details class="border-2 border-gray-200 rounded-xl shadow-md p-6">
-                    <summary class="cursor-pointer font-semibold text-xl flex justify-between">
-                        ¿Puedo entrar si soy nuevo en la fe?
-                        <span>⌄</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700">
-                        No, la EMJ no está dirigida a nuevos creyentes. Estos deben recibir
-                        discipulados iniciales de su iglesia local y nacional.
-                    </p>
-                </details>
+                <!-- Accordion Item 2 -->
+                <div class="border-b border-slate-200">
+                    <button onclick="toggleAccordion(2)"
+                        class="w-full flex justify-between items-center py-5 text-slate-800">
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-7 h-7 text-indigo-800">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                            </svg>
+                            <span class="font-bold text-xl text-left">¿Sólo miembros de la Iglesia Wesleyana pueden
+                                inscribirse?</span>
+                        </div>
+                        <span id="icon-2" class="text-slate-800 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                class="w-4 h-4">
+                                <path
+                                    d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="pb-5 text-base text-slate-700">
+                            No, si bien la EMJ está dirigida a miembros de la Iglesia Wesleyana,
+                            también podemos recibir creyentes de organizaciones hermanas que
+                            necesitan la capacitación.
+                        </div>
+                    </div>
+                </div>
 
-                <details class="border-2 border-gray-200 rounded-xl shadow-md p-6">
-                    <summary class="cursor-pointer font-semibold text-xl flex justify-between">
-                        ¿Hay rango de edad?
-                        <span>⌄</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700">
-                        Si. Los estudiantes deben ser mayores de edad.
-                    </p>
-                </details>
+                <!-- Accordion Item 3 -->
+                <div class="border-b border-slate-200">
+                    <button onclick="toggleAccordion(3)"
+                        class="w-full flex justify-between items-center py-5 text-slate-800">
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-7 h-7 text-indigo-800">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                            </svg>
+                            <span class="font-bold text-xl text-left">¿Puedo entrar si soy nuevo en la fe?</span>
+                        </div>
+                        <span id="icon-3" class="text-slate-800 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                class="w-4 h-4">
+                                <path
+                                    d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="pb-5 text-base text-slate-700">
+                            No, la EMJ no está dirigida a nuevos creyentes.
+                            Estos deben recibir discipulados iniciales de su iglesia local y nacional.
+                        </div>
+                    </div>
+                </div>
 
-                <details class="border-2 border-gray-200 rounded-xl shadow-md p-6">
-                    <summary class="cursor-pointer font-semibold text-xl flex justify-between">
-                        ¿Las clases son en vivo?
-                        <span>⌄</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700">
-                        No, las clases son asíncronas. Cada materia incluye videos, lecturas y
-                        tareas prácticas. Existen encuentros por Zoom para seguimiento y
-                        aclaración de dudas.
-                    </p>
-                </details>
+                <!-- Accordion Item 4 -->
+                <div class="border-b border-slate-200">
+                    <button onclick="toggleAccordion(4)"
+                        class="w-full flex justify-between items-center py-5 text-slate-800">
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-7 h-7 text-indigo-800">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                            </svg>
+                            <span class="font-bold text-xl text-left">¿Hay rango de edad?</span>
+                        </div>
+                        <span id="icon-4" class="text-slate-800 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                class="w-4 h-4">
+                                <path
+                                    d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="pb-5 text-base text-slate-700">
+                            Si. Los estudiantes deben ser mayores de edad.
+                        </div>
+                    </div>
+                </div>
 
-                <details class="border-2 border-gray-200 rounded-xl shadow-md p-6">
-                    <summary class="cursor-pointer font-semibold text-xl flex justify-between">
-                        ¿Quienes pueden postular?
-                        <span>⌄</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700">
-                        Ministros, obreros ministeriales, profesionales, estudiantes de
-                        institutos biblicos, y personas en el proceso misionero transcultural.
-                    </p>
-                </details>
+                <!-- Accordion Item 5 -->
+                <div class="border-b border-slate-200">
+                    <button onclick="toggleAccordion(5)"
+                        class="w-full flex justify-between items-center py-5 text-slate-800">
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-7 h-7 text-indigo-800">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                            </svg>
+                            <span class="font-bold text-xl text-left">¿Las clases son en vivo?</span>
+                        </div>
+                        <span id="icon-5" class="text-slate-800 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                class="w-4 h-4">
+                                <path
+                                    d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div id="content-5" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="pb-5 text-base text-slate-700">
+                            No, las clases son asíncronas.
+                            Cada materia incluye videos, lecturas y tareas prácticas.
+                            Existen encuentros por Zoom para seguimiento y aclaración de dudas.
+                        </div>
+                    </div>
+                </div>
 
-                <details class="border-2 border-gray-200 rounded-xl shadow-md p-6">
-                    <summary class="cursor-pointer font-semibold text-xl flex justify-between">
-                        ¿Cuánto dura el programa?
-                        <span>⌄</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700">
-                        Tiene una duración de dos años, divididos en cursos fundamentales y especializados.
-                    </p>
-                </details>
+                <!-- Accordion Item 6 -->
+                <div class="border-b border-slate-200">
+                    <button onclick="toggleAccordion(6)"
+                        class="w-full flex justify-between items-center py-5 text-slate-800">
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-7 h-7 text-indigo-800">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                            </svg>
+                            <span class="font-bold text-xl text-left">¿Quienes pueden inscribirse?</span>
+                        </div>
+                        <span id="icon-6" class="text-slate-800 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                class="w-4 h-4">
+                                <path
+                                    d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div id="content-6" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="pb-5 text-base text-slate-700">
+                            Ministros, obreros ministeriales, profesionales,
+                            estudiantes de institutos biblicos,
+                            y personas en el proceso misionero transcultural.
+                        </div>
+                    </div>
+                </div>
 
-                <details class="border-2 border-gray-200 rounded-xl shadow-md p-6">
-                    <summary class="cursor-pointer font-semibold text-xl flex justify-between">
-                        ¿Recibiré un certificado?
-                        <span>⌄</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700">
-                        Sí, al finalizar los dos años se entrega un diploma que certifica la capacitación transcultural.
-                    </p>
-                </details>
+                <!-- Accordion Item 7 -->
+                <div class="border-b border-slate-200">
+                    <button onclick="toggleAccordion(7)"
+                        class="w-full flex justify-between items-center py-5 text-slate-800">
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-7 h-7 text-indigo-800">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                            </svg>
+                            <span class="font-bold text-xl text-left">¿Cuánto dura la Escuela?</span>
+                        </div>
 
+                        <span id="icon-7" class="text-slate-800 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                class="w-4 h-4">
+                                <path
+                                    d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div id="content-7" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="pb-5 text-base text-slate-700">Tiene una duración de dos años, divididos en
+                            cursos fundamentales y especializados.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item 8 -->
+                <div class="border-b border-slate-200">
+                    <button onclick="toggleAccordion(8)"
+                        class="w-full flex justify-between items-center py-5 text-slate-800">
+                        <div class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-7 h-7 text-indigo-800">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                            </svg>
+                            <span class="font-bold text-xl text-left">¿Recibiré un certificado?</span>
+                        </div>
+                        <span id="icon-8" class="text-slate-800 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                class="w-4 h-4">
+                                <path
+                                    d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div id="content-8" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="pb-5 text-base text-slate-700">
+                            Sí, al finalizar los dos años se entrega un diploma que certifica la capacitación
+                            transcultural.
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="mt-12 text-center bg-blue-50 border-2 border-blue-100 rounded-xl p-8">
-                <h3 class="text-2xl mb-3 text-gray-900">¿Tienes más preguntas?</h3>
-                <p class="text-gray-700 mb-6">
-                    Nuestro equipo está disponible para ayudarte
+            <!-- DUDAS O CONSULTAS -->
+            <div class="mt-16 border-t border-slate-200 pt-12 text-center">
+                <h3 class="text-3xl font-black uppercase tracking-tight text-slate-900 mb-4">
+                    ¿Aún tienes dudas?
+                </h3>
+
+                <p class="text-lg text-slate-600 max-w-xl mx-auto mb-8">
+                    Si necesitas más información sobre el proceso de admisión o el programa,
+                    nuestro equipo estará encantado de orientarte.
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="mailto:sotoyefi2@gmail.com"
-                        class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sotoyefi2@gmail.com" target="_blank"
+                        class="inline-flex items-center justify-center px-8 py-4 bg-[#1965e9] text-white font-bold uppercase tracking-wide hover:bg-blue-700 transition-colors">
                         Contactar Director
                     </a>
-                    <a href="mailto:aryannetri@gmail.com"
-                        class="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700">
-                        Contactar Secretaria
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aryannetri@gmail.com" target="_blank"
+                        class="inline-flex items-center justify-center px-8 py-4 border border-slate-300 text-slate-700 font-bold uppercase tracking-wide hover:bg-slate-50 transition-colors">
+                        Contactar Secretaría
                     </a>
                 </div>
             </div>
@@ -996,6 +1250,35 @@
             duration: 500,
             reset: false
         });
+    </script>
+    <script>
+        function toggleAccordion(index) {
+            const content = document.getElementById(`content-${index}`);
+            const icon = document.getElementById(`icon-${index}`);
+
+            // SVG for Minus icon
+            const minusSVG = `
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+            <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+            </svg>
+    `;
+
+            // SVG for Plus icon
+            const plusSVG = `
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+            <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+            </svg>
+    `;
+
+            // Toggle the content's max-height for smooth opening and closing
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0';
+                icon.innerHTML = plusSVG;
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.innerHTML = minusSVG;
+            }
+        }
     </script>
 
 </body>
