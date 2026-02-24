@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libros – Español | Jibacam</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ["Playfair Display", "serif"],
+                        sans: ["Inter", "system-ui", "sans-serif"],
+                    },
+                    colors: {
+                        brand: "#1965e9",
+                    }
+                }
+            }
+        };
+    </script>
+
+    <style>
+        .bg-patron {
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2d2d2' fill-opacity='0.34'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .book-card {
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .book-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 50px rgba(25, 101, 233, 0.12);
+        }
+
+        .book-card:hover .book-img {
+            transform: scale(1.04);
+        }
+
+        .book-img {
+            transition: transform 0.35s ease;
+        }
+
+        .cat-pill {
+            transition: all 0.2s;
+        }
+
+        .cat-pill:hover,
+        .cat-pill.active {
+            background: #1965e9;
+            color: #fff;
+            border-color: #1965e9;
+        }
+
+        /* Nav link */
+        .nav-link {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: #fff;
+        }
+
+        .nav-link.active {
+            color: #60a5fa;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(16px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .book-card {
+            animation: fadeUp 0.45s ease both;
+        }
+
+        .book-card:nth-child(1) {
+            animation-delay: 0.05s;
+        }
+
+        .book-card:nth-child(2) {
+            animation-delay: 0.10s;
+        }
+
+        .book-card:nth-child(3) {
+            animation-delay: 0.15s;
+        }
+
+        .book-card:nth-child(4) {
+            animation-delay: 0.20s;
+        }
+
+        .book-card:nth-child(5) {
+            animation-delay: 0.25s;
+        }
+
+        .book-card:nth-child(6) {
+            animation-delay: 0.30s;
+        }
+
+        .book-card:nth-child(7) {
+            animation-delay: 0.35s;
+        }
+
+        .book-card:nth-child(8) {
+            animation-delay: 0.40s;
+        }
+
+        .book-card:nth-child(9) {
+            animation-delay: 0.45s;
+        }
+
+        .book-card:nth-child(10) {
+            animation-delay: 0.50s;
+        }
+
+        .book-card:nth-child(11) {
+            animation-delay: 0.55s;
+        }
+
+        .book-card:nth-child(12) {
+            animation-delay: 0.60s;
+        }
+    </style>
+</head>
+
+<body class="bg-patron text-slate-800 font-sans leading-relaxed overflow-x-hidden w-full">
+
+    <!-- ══════════════════════════ NAV ══════════════════════════ -->
+    <nav class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
+            <a href="https://jibacam.net" class="text-white font-black text-lg tracking-widest uppercase">JIBACAM</a>
+            <div class="hidden md:flex items-center gap-6">
+                <a href="https://jibacam.net/pagina-principal-de-jibacam/" class="nav-link">Inicio</a>
+                <a href="https://jibacam.net/sobre-nosotros/" class="nav-link">Nosotros</a>
+                <a href="https://jibacam.net/noticias/" class="nav-link">Noticias</a>
+                <a href="https://jibacam.net/bases-de-misiones/" class="nav-link">Misiones</a>
+                <a href="https://jibacam.net/escuela-de-mision-de-jibacam/" class="nav-link">Escuela</a>
+                <a href="https://jibacam.net/libros/" class="nav-link active">Libros</a>
+                <a href="https://jibacam.net/seminarios-de-video/" class="nav-link">Seminarios</a>
+                <a href="https://jibacam.net/contactarnos/" class="nav-link">Contacto</a>
+            </div>
+            <!-- Mobile menu btn -->
+            <button class="md:hidden text-slate-400 hover:text-white" aria-label="Menú">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="2" y1="6" x2="20" y2="6" />
+                    <line x1="2" y1="12" x2="20" y2="12" />
+                    <line x1="2" y1="18" x2="20" y2="18" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ══════════════════════════ HERO ══════════════════════════ -->
+    <section
+        class="relative w-full min-h-[40vh] md:min-h-[52vh] flex items-center justify-center overflow-hidden bg-slate-900 py-12">
+        <div class="absolute inset-0">
+        <!-- Imagen de fondo -->
+        <img
+            src="assets/libraries.jpg"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover object-center"
+        />
+        <!-- Overlay oscuro semitransparente -->
+        <div class="absolute inset-0 bg-slate-900/70"></div>
+        <!-- subtle grid overlay -->
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: repeating-linear-gradient(0deg,transparent,transparent 40px,rgba(255,255,255,.05) 40px,rgba(255,255,255,.05) 41px),repeating-linear-gradient(90deg,transparent,transparent 40px,rgba(255,255,255,.05) 40px,rgba(255,255,255,.05) 41px)">
+        </div>
+        <!-- Gradiente de fade hacia abajo -->
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
+    </div>
+
+        <div class="relative z-10 flex flex-col items-center text-center px-4 max-w-4xl mx-auto w-full">
+            <span
+                class="inline-block px-4 py-1 rounded-full bg-blue-600/20 border border-blue-500/30 text-blue-400 text-xs font-semibold uppercase tracking-widest mb-6">
+                Recursos · Biblioteca
+            </span>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight tracking-tight mb-5">
+                Libros en
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600"> Español</span>
+            </h1>
+            <p class="text-slate-300 text-base md:text-lg max-w-xl leading-relaxed font-light">
+                Una colección de recursos escritos para obreros de misiones, líderes de iglesias y seguidores de Cristo
+                en todo el mundo.
+            </p>
+            <div class="mt-8 h-1.5 w-20 bg-blue-600 rounded-full mx-auto shadow-[0_0_15px_rgba(37,99,235,0.5)]"></div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════ BREADCRUMB ══════════════════════════ -->
+    <div class="bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2.5 flex items-center gap-2 text-xs text-slate-500">
+            <a href="https://jibacam.net" class="hover:text-blue-600 transition-colors">Inicio</a>
+            <svg class="w-3 h-3 text-slate-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+            <a href="https://jibacam.net/libros/" class="hover:text-blue-600 transition-colors">Libros</a>
+            <svg class="w-3 h-3 text-slate-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+            <span class="text-blue-600 font-semibold">Español</span>
+
+            <!-- Language switcher -->
+            <div
+                class="ml-auto flex items-center gap-1 border border-slate-200 rounded-lg overflow-hidden text-xs font-semibold">
+                <a href="https://jibacam.net/libros-es/" class="px-3 py-1.5 bg-blue-600 text-white">ES</a>
+                <a href="https://jibacam.net/libros-portugues-2/"
+                    class="px-3 py-1.5 text-slate-500 hover:bg-slate-50">PT</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════ MAIN ══════════════════════════ -->
+    <div class="bg-white/65 mx-auto px-4 sm:px-6 py-10 lg:py-14 flex flex-col lg:flex-row gap-10">
+
+        <!-- ── Sidebar ── -->
+        <aside class="hidden lg:block w-60 shrink-0">
+            <div class="sticky top-20 space-y-6">
+
+                <!-- Search -->
+                <div class="relative">
+                    <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" fill="none"
+                        stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <input type="text" placeholder="Buscar libros..."
+                        class="w-full pl-9 pr-3 py-2.5 rounded-xl border border-slate-200 bg-white text-sm text-slate-700 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm" />
+                </div>
+
+                <!-- Categories -->
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                    <div class="px-5 py-3.5 border-b border-slate-100 bg-slate-50">
+                        <p class="text-xs font-bold uppercase tracking-widest text-slate-500">Categorías</p>
+                    </div>
+                    <div class="p-4 space-y-1">
+                        <a href="https://jibacam.net/category/libros/antropologia/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Antropología</a>
+                        <a href="https://jibacam.net/category/libros/autobiografia/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Autobiografía</a>
+                        <a href="https://jibacam.net/category/libros/comentario-misional-libros/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Comentario
+                            Misional</a>
+                        <a href="https://jibacam.net/category/libros/cultura/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Cultura</a>
+                        <a href="https://jibacam.net/category/libros/devocionales/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Devocionales</a>
+                        <a href="https://jibacam.net/category/libros/discipular/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium bg-blue-50 text-blue-700">Discipular</a>
+                        <a href="https://jibacam.net/category/libros/estudio-biblico/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Estudio
+                            Bíblico</a>
+                        <a href="https://jibacam.net/category/libros/evangelismo/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Evangelismo</a>
+                        <a href="https://jibacam.net/category/libros/historias-de-personas-de-la-biblia/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Historias
+                            Bíblicas</a>
+                        <a href="https://jibacam.net/category/libros/islam/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Islam</a>
+                        <a href="https://jibacam.net/category/libros/liderazgo/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Liderazgo</a>
+                        <a href="https://jibacam.net/category/libros/manuales/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Manuales</a>
+                        <a href="https://jibacam.net/category/libros/mayordormia/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Mayordomía</a>
+                        <a href="https://jibacam.net/category/libros/misiones/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Misiones</a>
+                        <a href="https://jibacam.net/category/libros/mundo-espiritual/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Mundo
+                            Espiritual</a>
+                        <a href="https://jibacam.net/category/libros/prosperidad/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Prosperidad</a>
+                        <a href="https://jibacam.net/category/libros/reflexiones/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Reflexiones</a>
+                        <a href="https://jibacam.net/category/libros/santidad/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Santidad</a>
+                        <a href="https://jibacam.net/category/libros/teologia/"
+                            class="block px-3 py-1.5 rounded-lg text-sm text-slate-600 hover:bg-blue-50 hover:text-blue-700 transition-colors font-medium">Teología</a>
+                    </div>
+                </div>
+
+                <!-- Stats widget -->
+                <div
+                    class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-5 text-white shadow-lg shadow-blue-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 mb-3 text-blue-200" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                    <p class="text-2xl font-black">50+</p>
+                    <p class="text-blue-200 text-sm font-medium">Títulos disponibles en Español</p>
+                    <a href="https://jibacam.net/libros-portugues-2/"
+                        class="mt-3 inline-block text-xs font-semibold text-blue-200 hover:text-white underline underline-offset-2 transition-colors">Ver
+                        también en Português →</a>
+                </div>
+
+            </div>
+        </aside>
+
+        <!-- ── Content area ── -->
+        <div class="flex-1 min-w-0">
+
+            <!-- Top bar: results + sort -->
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+                <div>
+                    <p class="text-sm text-slate-500">Mostrando <span class="font-semibold text-slate-700">18 de
+                            50+</span> títulos · Página 1 de 3</p>
+                </div>
+                <div class="flex items-center gap-2 text-sm">
+                    <span class="text-slate-400 font-medium">Ordenar:</span>
+                    <select
+                        class="border border-slate-200 rounded-lg px-3 py-1.5 bg-white text-slate-600 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm cursor-pointer">
+                        <option>Más recientes</option>
+                        <option>Alfabético</option>
+                        <option>Número de serie</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Book grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-5">
+                <!-- Card template — repeat for each book -->
+                <a class="book-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col text-decoration-none"
+                    href="https://jibacam.net/elementos-de-discipular/" style="text-decoration:none;color:inherit;">
+                    <div class="relative overflow-hidden bg-slate-100" style="aspect-ratio:3/4">
+                        <img class="book-img w-full h-full object-cover"
+                            src="https://i0.wp.com/jibacam.net/wp-content/uploads/2026/01/058S-Elementos-de-Discipular.jpg?resize=400%2C520&ssl=1"
+                            alt="Elementos de Discipular" loading="lazy" />
+                        <span
+                            class="absolute top-2.5 left-2.5 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-md tracking-wide uppercase shadow">S58</span>
+                    </div>
+                    <div class="p-3.5 flex flex-col gap-1 flex-1">
+                        <p class="text-sm font-bold text-slate-800 leading-snug">Elementos de Discipular</p>
+                        <p class="text-xs text-slate-500 leading-relaxed font-light line-clamp-2">Una mirada en la
+                            manera en que Jesús hizo el proceso de discipular</p>
+                        <div class="mt-auto pt-2">
+                            <span
+                                class="inline-block text-[10px] font-semibold uppercase tracking-wide text-blue-600 bg-blue-50 px-2 py-0.5 rounded-md">Discipular</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="book-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col"
+                    href="https://jibacam.net/s06-comunicaciones-en-misiones/"
+                    style="text-decoration:none;color:inherit;">
+                    <div class="relative overflow-hidden bg-slate-100" style="aspect-ratio:3/4">
+                        <img class="book-img w-full h-full object-cover"
+                            src="https://i0.wp.com/jibacam.net/wp-content/uploads/2025/03/06SC-COMUNICACIONES-EN-MISIONES-01-1.jpg?ssl=1"
+                            alt="Comunicaciones en Misiones" loading="lazy" />
+                        <span
+                            class="absolute top-2.5 left-2.5 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-md tracking-wide uppercase shadow">S06</span>
+                    </div>
+                    <div class="p-3.5 flex flex-col gap-1 flex-1">
+                        <p class="text-sm font-bold text-slate-800 leading-snug">Comunicaciones en Misiones</p>
+                        <p class="text-xs text-slate-500 leading-relaxed font-light line-clamp-2">Cómo comunica, a quién
+                            comunica, qué comunica — guía para obreros y entidades</p>
+                        <div class="mt-auto pt-2">
+                            <span
+                                class="inline-block text-[10px] font-semibold uppercase tracking-wide text-green-700 bg-green-50 px-2 py-0.5 rounded-md">Manuales</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="book-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col"
+                    href="https://jibacam.net/josue-la-vida-en-transicion/" style="text-decoration:none;color:inherit;">
+                    <div class="relative overflow-hidden bg-slate-100" style="aspect-ratio:3/4">
+                        <img class="book-img w-full h-full object-cover"
+                            src="https://i0.wp.com/jibacam.net/wp-content/uploads/2025/03/57EC-Joshua-Life-in-Transition-scaled.jpg?resize=400%2C520&ssl=1"
+                            alt="Josué" loading="lazy" />
+                        <span
+                            class="absolute top-2.5 left-2.5 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-md tracking-wide uppercase shadow">S48</span>
+                    </div>
+                    <div class="p-3.5 flex flex-col gap-1 flex-1">
+                        <p class="text-sm font-bold text-slate-800 leading-snug">Josué — La vida en transición</p>
+                        <p class="text-xs text-slate-500 leading-relaxed font-light line-clamp-2">Explora los asuntos de
+                            cambios en liderazgo</p>
+                        <div class="mt-auto pt-2">
+                            <span
+                                class="inline-block text-[10px] font-semibold uppercase tracking-wide text-purple-700 bg-purple-50 px-2 py-0.5 rounded-md">Liderazgo</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="book-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col"
+                    href="https://jibacam.net/llegando-a-ser-un-crisitano-de-clase-mundial-vol-2/"
+                    style="text-decoration:none;color:inherit;">
+                    <div class="relative overflow-hidden bg-slate-100" style="aspect-ratio:3/4">
+                        <img class="book-img w-full h-full object-cover"
+                            src="https://i0.wp.com/jibacam.net/wp-content/uploads/2025/03/29SC-Llegando-a-ser-un-Cristiano-de-Clase-Mundial-parte-2.jpg?ssl=1"
+                            alt="Cristiano de Clase Mundial" loading="lazy" />
+                        <span
+                            class="absolute top-2.5 left-2.5 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-md tracking-wide uppercase shadow">S27</span>
+                    </div>
+                    <div class="p-3.5 flex flex-col gap-1 flex-1">
+                        <p class="text-sm font-bold text-slate-800 leading-snug">Cristiano de Clase Mundial — Vol. 2</p>
+                        <p class="text-xs text-slate-500 leading-relaxed font-light line-clamp-2">Continuación del Vol.
+                            1</p>
+                        <div class="mt-auto pt-2">
+                            <span
+                                class="inline-block text-[10px] font-semibold uppercase tracking-wide text-blue-600 bg-blue-50 px-2 py-0.5 rounded-md">Misiones</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="book-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col"
+                    href="https://jibacam.net/discipular-para-todos/" style="text-decoration:none;color:inherit;">
+                    <div class="relative overflow-hidden bg-slate-100" style="aspect-ratio:3/4">
+                        <img class="book-img w-full h-full object-cover"
+                            src="https://i0.wp.com/jibacam.net/wp-content/uploads/2025/04/56EC-Discipleship-for-Everyone-scaled.jpg?resize=400%2C520&ssl=1"
+                            alt="Discipular para Todos" loading="lazy" />
+                        <span
+                            class="absolute top-2.5 left-2.5 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-md tracking-wide uppercase shadow">S57</span>
+                    </div>
+                    <div class="p-3.5 flex flex-col gap-1 flex-1">
+                        <p class="text-sm font-bold text-slate-800 leading-snug">Discipular para Todos</p>
+                        <p class="text-xs text-slate-500 leading-relaxed font-light line-clamp-2">Cómo hacer el proceso
+                            de discipular basado en el nivel de desarrollo personal</p>
+                        <div class="mt-auto pt-2">
+                            <span
+                                class="inline-block text-[10px] font-semibold uppercase tracking-wide text-blue-600 bg-blue-50 px-2 py-0.5 rounded-md">Discipular</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="book-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col"
+                    href="https://jibacam.net/cartas-del-fin-del-mundo-111-222-una-autobiografia-de-perry-y-nancy-hubbard-en-la-forma-de-cartas/"
+                    style="text-decoration:none;color:inherit;">
+                    <div class="relative overflow-hidden bg-slate-100" style="aspect-ratio:3/4">
+                        <img class="book-img w-full h-full object-cover"
+                            src="https://i0.wp.com/jibacam.net/wp-content/uploads/2025/03/Letters-from-the-ends-Pt-2-cover-1.png?ssl=1"
+                            alt="Cartas del Fin del Mundo" loading="lazy" />
+                        <span
+                            class="absolute top-2.5 left-2.5 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-md tracking-wide uppercase shadow">S39</span>
+                    </div>
+                    <div class="p-3.5 flex flex-col gap-1 flex-1">
+                        <p class="text-sm font-bold text-slate-800 leading-snug">Cartas del Fin del Mundo — 111–222</p>
+                        <p class="text-xs text-slate-500 leading-relaxed font-light line-clamp-2">Autobiografía de Perry
+                            y Nancy Hubbard en la forma de cartas</p>
+                        <div class="mt-auto pt-2">
+                            <span
+                                class="inline-block text-[10px] font-semibold uppercase tracking-wide text-orange-700 bg-orange-50 px-2 py-0.5 rounded-md">Autobiografía</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="book-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col"
+                    href="https://jibacam.net/cartas-del-fin-del-mundo-1-110-una-autobiografia-de-perry-y-nancy-hubbard-en-la-forma-de-cartas/"
+                    style="text-decoration:none;color:inherit;">
+                    <div class="relative overflow-hidden bg-slate-100" style="aspect-ratio:3/4">
+                        <img class="book-img w-full h-full object-cover"
+                            src="https://i0.wp.com/jibacam.net/wp-content/uploads/2025/03/Letters-1-web-cover-Perry-Hubbard-648x819-2.png?resize=400%2C520&ssl=1"
+                            alt="Cartas del Fin del Mundo 1–110" loading="lazy" />
+                        <span
+                            class="absolute top-2.5 left-2.5 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-md tracking-wide uppercase shadow">S38</span>
+                    </div>
+                    <div class="p-3.5 flex flex-col gap-1 flex-1">
+                        <p class="text-sm font-bold text-slate-800 leading-snug">Cartas del Fin del Mundo — 1–110</p>
+                        <p class="text-xs text-slate-500 leading-relaxed font-light line-clamp-2">Autobiografía de Perry
+                            y Nancy Hubbard en la forma de cartas</p>
+                        <div class="mt-auto pt-2">
+                            <span
+                                class="inline-block text-[10px] font-semibold uppercase tracking-wide text-orange-700 bg-orange-50 px-2 py-0.5 rounded-md">Autobiografía</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="book-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col"
+                    href="https://jibacam.net/cartas-del-escritorio-de-director-una-coleccion-de-cartas-escrito-por-el-director-interino-dr-perry-j-hubbard-a-los-lideres-de-la-region/"
+                    style="text-decoration:none;color:inherit;">
+                    <div class="relative overflow-hidden bg-slate-100" style="aspect-ratio:3/4">
+                        <img class="book-img w-full h-full object-cover"
+                            src="https://i0.wp.com/jibacam.net/wp-content/uploads/2025/03/45SC-Cartas-del-escritorio-del-director.jpg?ssl=1"
+                            alt="Del Escritorio del Director" loading="lazy" />
+                        <span
+                            class="absolute top-2.5 left-2.5 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-md tracking-wide uppercase shadow">S40</span>
+                    </div>
+                    <div class="p-3.5 flex flex-col gap-1 flex-1">
+                        <p class="text-sm font-bold text-slate-800 leading-snug">Del Escritorio del Director</p>
+                        <p class="text-xs text-slate-500 leading-relaxed font-light line-clamp-2">Cartas del Dr. Perry
+                            J. Hubbard a los líderes de la región</p>
+                        <div class="mt-auto pt-2">
+                            <span
+                                class="inline-block text-[10px] font-semibold uppercase tracking-wide text-purple-700 bg-purple-50 px-2 py-0.5 rounded-md">Liderazgo</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="book-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col"
+                    href="https://jibacam.net/extranjeros-dentro-nosotros/" style="text-decoration:none;color:inherit;">
+                    <div class="relative overflow-hidden bg-slate-100" style="aspect-ratio:3/4">
+                        <img class="book-img w-full h-full object-cover"
+                            src="https://i0.wp.com/jibacam.net/wp-content/uploads/2025/03/058-Extranjeros-entre-nosotros-1.jpg?resize=400%2C520&ssl=1"
+                            alt="Extranjeros dentro Nosotros" loading="lazy" />
+                        <span
+                            class="absolute top-2.5 left-2.5 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-md tracking-wide uppercase shadow">S50</span>
+                    </div>
+                    <div class="p-3.5 flex flex-col gap-1 flex-1">
+                        <p class="text-sm font-bold text-slate-800 leading-snug">Extranjeros dentro Nosotros</p>
+                        <p class="text-xs text-slate-500 leading-relaxed font-light line-clamp-2">Historias ficcionales
+                            sobre personas del pueblo de Israel y el plan de misión de Dios</p>
+                        <div class="mt-auto pt-2">
+                            <span
+                                class="inline-block text-[10px] font-semibold uppercase tracking-wide text-blue-600 bg-blue-50 px-2 py-0.5 rounded-md">Misiones</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="book-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col"
+                    href="https://jibacam.net/el-buen-mayordomo/" style="text-decoration:none;color:inherit;">
+                    <div class="relative overflow-hidden bg-slate-100" style="aspect-ratio:3/4">
+                        <img class="book-img w-full h-full object-cover"
+                            src="https://i0.wp.com/jibacam.net/wp-content/uploads/2025/03/51-SC-El-Buen-Mayordomo.jpg?ssl=1"
+                            alt="El Buen Mayordomo" loading="lazy" />
+                        <span
+                            class="absolute top-2.5 left-2.5 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-md tracking-wide uppercase shadow">S46</span>
+                    </div>
+                    <div class="p-3.5 flex flex-col gap-1 flex-1">
+                        <p class="text-sm font-bold text-slate-800 leading-snug">El Buen Mayordomo</p>
+                        <p class="text-xs text-slate-500 leading-relaxed font-light line-clamp-2">Estudios de carácter
+                            de mayordomos y parábolas de Jesús como ejemplo de servicio</p>
+                        <div class="mt-auto pt-2">
+                            <span
+                                class="inline-block text-[10px] font-semibold uppercase tracking-wide text-teal-700 bg-teal-50 px-2 py-0.5 rounded-md">Mayordomía</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="book-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col"
+                    href="https://jibacam.net/diario-de-un-hacedor-de-discipulos/"
+                    style="text-decoration:none;color:inherit;">
+                    <div class="relative overflow-hidden bg-slate-100" style="aspect-ratio:3/4">
+                        <img class="book-img w-full h-full object-cover"
+                            src="https://i0.wp.com/jibacam.net/wp-content/uploads/2025/03/052SC-Diario-de-un-Hacedor-de-Discipulos-scaled.jpg?resize=400%2C520&ssl=1"
+                            alt="Diario de un Hacedor de Discípulos" loading="lazy" />
+                        <span
+                            class="absolute top-2.5 left-2.5 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-md tracking-wide uppercase shadow">S47</span>
+                    </div>
+                    <div class="p-3.5 flex flex-col gap-1 flex-1">
+                        <p class="text-sm font-bold text-slate-800 leading-snug">Diario de un Hacedor de Discípulos</p>
+                        <p class="text-xs text-slate-500 leading-relaxed font-light line-clamp-2">Reflexiones sobre
+                            Mateo y la responsabilidad del hacedor de discípulos</p>
+                        <div class="mt-auto pt-2">
+                            <span
+                                class="inline-block text-[10px] font-semibold uppercase tracking-wide text-blue-600 bg-blue-50 px-2 py-0.5 rounded-md">Discipular</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="book-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col"
+                    href="https://jibacam.net/amando-y-yendo/" style="text-decoration:none;color:inherit;">
+                    <div class="relative overflow-hidden bg-slate-100" style="aspect-ratio:3/4">
+                        <img class="book-img w-full h-full object-cover"
+                            src="https://i0.wp.com/jibacam.net/wp-content/uploads/2025/03/50SC-AMAR-Y-SEGUIR-01-revised-scaled.jpg?resize=400%2C520&ssl=1"
+                            alt="Amando y Yendo" loading="lazy" />
+                        <span
+                            class="absolute top-2.5 left-2.5 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-md tracking-wide uppercase shadow">S45</span>
+                    </div>
+                    <div class="p-3.5 flex flex-col gap-1 flex-1">
+                        <p class="text-sm font-bold text-slate-800 leading-snug">Amando y Yendo</p>
+                        <p class="text-xs text-slate-500 leading-relaxed font-light line-clamp-2">Estudio enfocado en
+                            Mateo 28:18–20 para los seguidores de Cristo</p>
+                        <div class="mt-auto pt-2">
+                            <span
+                                class="inline-block text-[10px] font-semibold uppercase tracking-wide text-blue-600 bg-blue-50 px-2 py-0.5 rounded-md">Evangelismo</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <!-- /grid -->
+
+            <!-- Pagination -->
+            <div class="flex items-center justify-center gap-2 mt-10">
+                <a href="?w10_post_grid_p=1"
+                    class="w-10 h-10 flex items-center justify-center rounded-xl bg-blue-600 text-white font-bold text-sm shadow-md shadow-blue-200">1</a>
+                <a href="?w10_post_grid_p=2"
+                    class="w-10 h-10 flex items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-600 font-semibold text-sm hover:border-blue-400 hover:text-blue-600 transition-colors shadow-sm">2</a>
+                <a href="?w10_post_grid_p=3"
+                    class="w-10 h-10 flex items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-600 font-semibold text-sm hover:border-blue-400 hover:text-blue-600 transition-colors shadow-sm">3</a>
+                <a href="?w10_post_grid_p=2"
+                    class="h-10 px-5 flex items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-600 font-semibold text-sm hover:border-blue-400 hover:text-blue-600 transition-colors shadow-sm gap-1.5">
+                    Siguiente
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+        </div><!-- /content -->
+    </div><!-- /main -->
+
+    <!-- ══════════════════════════ FOOTER ══════════════════════════ -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-10 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>
+                <p class="text-white font-black text-xl tracking-widest uppercase">JIBACAM</p>
+                <p class="text-slate-500 text-xs mt-1 uppercase tracking-wider">Junta Iberoamericana de Misiones
+                    Camerísticas</p>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="https://jibacam.net/libros-es/"
+                    class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Libros ES</a>
+                <a href="https://jibacam.net/libros-portugues-2/"
+                    class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Libros PT</a>
+                <a href="https://jibacam.net/contactarnos/"
+                    class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Contacto</a>
+            </div>
+            <p class="text-slate-600 text-xs">©2026 Jibacam · Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
