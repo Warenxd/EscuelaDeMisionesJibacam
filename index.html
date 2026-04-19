@@ -18,9 +18,24 @@
             },
         };
     </script>
+        <style>
+        .bg-patron {
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2d2d2' fill-opacity='0.34'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .bg-patron-dark {
+        background-color: #0a4393;
+        /* He cambiado el fill del SVG a blanco (%23ffffff) y bajado la opacidad para que sea sutil */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
     </head>
 
-    <body class="min-h-screen bg-gray-50 text-gray-800 font-sans">
+    <body class="min-h-screen bg-patron text-gray-800 font-sans">
         <!-- CARRUSEL -->
         <section
             class="relative bg-gray-900 overflow-hidden h-[85vh] flex items-center justify-center">
@@ -48,7 +63,6 @@
                         <p class="text-xl text-gray-200 mb-8 font-light">
                             Nuestro gran evento cada 4 años.
                         </p>
-
                         <button
                             class="bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
                             Saber más
@@ -734,7 +748,7 @@
         </section>
 
         <!-- JUNTA JIBACAM -->
-        <section class="relative z-10 pt-12 pb-24 px-6 bg-stone-100">
+        <section class="relative z-10 pt-12 pb-24 px-6 bg-stone-100/40">
             <img
                 src="assets/jibacam-blackLogo.png"
                 alt="Decoración de fondo"
@@ -754,7 +768,7 @@
                 <div
                     class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
                     <div
-                        class="group cursor-pointer text-center flex flex-col items-center">
+                        class="group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
                         <div
                             class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-yellow-400 group-hover:border-yellow-300 shadow-lg transition-colors duration-300">
                             <img
@@ -780,9 +794,9 @@
                     </div>
 
                     <div
-                        class="group cursor-pointer text-center flex flex-col items-center">
+                        class="group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
                         <div
-                            class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-red-400 group-hover:border-red-500 shadow-lg transition-colors duration-300">
+                            class="w-48 h-48 rounded-full  overflow-hidden mb-8 border-4 border-red-400 group-hover:border-red-500 shadow-lg transition-colors duration-300">
                             <img
                                 src="assets/pr-lucy.jpeg"
                                 alt="Rev. Lucy Narvaez"
@@ -805,7 +819,7 @@
                     </div>
 
                     <div
-                        class="group cursor-pointer text-center flex flex-col items-center">
+                        class="group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
                         <div
                             class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-red-500 group-hover:border-red-600 shadow-lg transition-colors duration-300">
                             <img
@@ -832,7 +846,7 @@
                     </div>
 
                     <div
-                        class="group cursor-pointer text-center flex flex-col items-center">
+                        class="group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
                         <div
                             class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-red-500 group-hover:border-red-600 shadow-lg transition-colors duration-300">
                             <img
@@ -857,7 +871,7 @@
                     </div>
 
                     <div
-                        class="group cursor-pointer text-center flex flex-col items-center">
+                        class="group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
                         <div
                             class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-emerald-500 group-hover:border-emerald-600 shadow-lg transition-colors duration-300">
                             <img
@@ -882,7 +896,7 @@
                     </div>
 
                     <div
-                        class="group cursor-pointer text-center flex flex-col items-center">
+                        class="group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
                         <div
                             class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-blue-500 group-hover:border-blue-600 shadow-lg transition-colors duration-300">
                             <img
@@ -911,7 +925,8 @@
         </section>
 
         <!-- NUESTRO IMPACTO -->
-        <section class="relative py-24 px-6 bg-[#0a4393] overflow-hidden">
+        <section
+            class="relative py-24 px-6 bg-patron-dark !bg-[#0a4393] overflow-hidden">
             <svg
                 class="absolute top-0 left-0 w-96 h-96 -ml-24 -mt-24 text-white opacity-[0.03] pointer-events-none"
                 fill="currentColor"
@@ -919,6 +934,10 @@
                 <path
                     d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
             </svg>
+            <img
+                src="assets/impact.jpg"
+                class="absolute inset-0 w-full h-full object-cover opacity-[0.09] pointer-events-none z-0"
+                alt="Decoración fondo">
 
             <svg
                 class="absolute top-0 right-0 w-[500px] h-[500px] -mr-32 -mt-10 text-white opacity-[0.02] pointer-events-none"
