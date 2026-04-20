@@ -21,12 +21,17 @@
         <style>
         .bg-patron {
             background-color: #f8fafc;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2d2d2' fill-opacity='0.34'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2d2d2' fill-opacity='0.14'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .bg-patron2 {
+            background-color: #f8fafc;
+            /* He bajado el fill-opacity a 0.1 para que sea muy sutil */
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2d2d2' fill-opacity='0.1'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
         .bg-patron-dark {
-        background-color: #0a4393;
-        /* He cambiado el fill del SVG a blanco (%23ffffff) y bajado la opacidad para que sea sutil */
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-color: #0a4393;
+            /* He cambiado el fill del SVG a blanco (%23ffffff) y bajado la opacidad para que sea sutil */
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
 
         html {
@@ -63,10 +68,10 @@
                         <p class="text-xl text-gray-200 mb-8 font-light">
                             Nuestro gran evento cada 4 años.
                         </p>
-                        <button
-                            class="bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                        <a href="#conferencia-jibacam"
+                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
                             Saber más
-                        </button>
+                        </a>
                     </div>
                 </div>
 
@@ -87,10 +92,10 @@
                             Información de eventos y programas de la región y
                             las áreas.
                         </p>
-                        <button
-                            class="bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
-                            Ver eventos
-                        </button>
+                        <a href="https://jibacam.net/noticias/"
+                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                            Ver Eventos
+                        </a>
                     </div>
                 </div>
 
@@ -111,10 +116,10 @@
                             Información acerca de los proyectos de misiones en
                             desarrollo.
                         </p>
-                        <button
-                            class="bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                        <a href="https://jibacam.net/bases-de-misiones/"
+                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
                             Conocer más
-                        </button>
+                        </a>
                     </div>
                 </div>
 
@@ -136,10 +141,11 @@
                             preparación de
                             misiones.
                         </p>
-                        <button
-                            class="bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
-                            Ver programa
-                        </button>
+                        <a
+                            href="https://jibacam.net/escuela-de-mision-de-jibacam"
+                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                            Ver Programa
+                        </a>
                     </div>
                 </div>
 
@@ -160,10 +166,11 @@
                             Revisión de los próximos eventos y jornadas de
                             entrenamiento.
                         </p>
-                        <button
-                            class="bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                        <a
+                            href="https://jibacam.net/entrenamiento-linea-cronologio/"
+                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
                             Explorar
-                        </button>
+                        </a>
                     </div>
                 </div>
 
@@ -185,10 +192,10 @@
                             para tu
                             formación.
                         </p>
-                        <button
-                            class="bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
-                            Ver catálogo
-                        </button>
+                        <a href="https://jibacam.net/libros/"
+                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                            Ver Catálogo
+                        </a>
                     </div>
                 </div>
 
@@ -209,10 +216,10 @@
                             Material audiovisual y grabaciones de nuestros
                             últimos seminarios.
                         </p>
-                        <button
-                            class="bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
-                            Ver videos
-                        </button>
+                        <a href="https://jibacam.net/seminarios-de-video/"
+                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                            Ver Videos
+                        </a>
                     </div>
                 </div>
 
@@ -235,10 +242,11 @@
                             intensivo para
                             obreros.
                         </p>
-                        <button
-                            class="bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
-                            Más información
-                        </button>
+                        <a
+                            href="https://jibacam.net/cuidado-intensivo-de-obrero/"
+                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                            Más Información
+                        </a>
                     </div>
                 </div>
 
@@ -260,10 +268,10 @@
                             perteneciente a
                             misiones.
                         </p>
-                        <button
-                            class="bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
-                            Visitar sitios
-                        </button>
+                        <a href="https://jibacam.net/enlaces/"
+                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                            Visitar Sitios
+                        </a>
                     </div>
                 </div>
             </div>
@@ -336,7 +344,7 @@
         </section>
 
         <!-- QUÉ ES JIBACAM -->
-        <section class="py-16 px-4 max-w-7xl mx-auto">
+        <section class="relative py-16 px-4 max-w-7xl mx-auto reveal overflow-hidden rounded-[3rem]">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="lg:w-1/2">
                     <h2
@@ -355,10 +363,10 @@
                         </p>
                         <p>
                             Hemos avanzado de ser sólo un promotor a
-                            organizarnos como una agencia
+                            organizarnos como una <b>agencia
                             misionera de envío y formación de misioneros con
                             todos los desafíos
-                            que esto representa para el Reino. <br>
+                            que esto representa para el Reino</b>. <br>
                             Durante años ha motivado, desafiado,
                             instruido y capacitado líderes misionales
                             a través del congreso bianual Misionero
@@ -368,12 +376,12 @@
                             mensaje del evangelio.
                         </p>
                         <p>
-                            Estamos encargados de gestionar la obra misionera y
+                            <b>Estamos encargados de gestionar la obra misionera y
                             plantar nuevas
                             Iglesias Wesleyanas en el contexto Iberoamericano y
                             Caribeño,
                             creyendo en un evangelio práctico que transforma
-                            vidas.
+                            vidas</b>.
                         </p>
                     </div>
                 </div>
@@ -382,15 +390,15 @@
                     <div
                         class="p-4 bg-white rounded-[2rem] shadow-2xl shadow-blue-100/50">
                         <img
-                            src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            src="assets/jibacam-together.jpg"
                             alt="Equipo JIBACAM"
-                            class="rounded-[1.5rem] w-full h-auto object-cover" />
+                            class="rounded-[1.5rem] w-full h-auto object-cover scale-105" />
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-16 bg-gray-50/50">
+        <section class="py-16 bg-gray-50/50 reveal">
             <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
 
                 <div
@@ -458,7 +466,7 @@
         </section>
 
         <!-- QUÉ HACEMOS -->
-        <section class="py-24 px-6 bg-slate-100 font-sans">
+        <section class="py-24 px-6 bg-slate-100 font-sans reveal">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-16">
                     <h2
@@ -546,7 +554,7 @@
         </section>
 
         <!-- SOBRE NOSOTROS -->
-        <section class="pt-24 bg-white">
+        <section class="pt-24 bg-gray-200 reveal">
             <div class="max-w-6xl mx-auto px-6 text-center mb-16">
                 <h2
                     class="text-4xl md:text-5xl font-black uppercase tracking-tight text-slate-900">
@@ -556,9 +564,9 @@
                     class="h-1.5 w-24 bg-[#1965e9] mx-auto mt-6 rounded-full"></div>
             </div>
 
-            <div class="bg-slate-100 py-20 px-6">
+            <div class="bg-stone-150 pb-20 px-6">
                 <div
-                    class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                    class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center reveal">
                     <div
                         class="flex flex-col justify-center order-2 md:order-1">
                         <h3
@@ -593,7 +601,7 @@
 
             <div class="bg-gray-50 py-20 px-6">
                 <div
-                    class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                    class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center reveal">
                     <div
                         class="relative w-full h-80 md:h-[400px] rounded-3xl overflow-hidden shadow-lg group">
                         <img src="assets/first-conference.png" alt="Congresos"
@@ -627,7 +635,7 @@
 
             <div class="bg-stone-200/80 py-20 px-6">
                 <div
-                    class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                    class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center reveal">
                     <div
                         class="flex flex-col justify-center order-2 md:order-1">
                         <h3
@@ -660,7 +668,7 @@
             </div>
         </section>
         <!-- PARA QUÉ EXISTE JIBACAM -->
-        <section class="relative z-0 py-20 px-6 bg-slate-50">
+        <section class="relative z-0 py-20 px-6 bg-slate-50 reveal">
             <div class="absolute inset-0 z-0">
                 <img
                     src="assets/missions2.jpg"
@@ -679,11 +687,11 @@
                         <div
                             class="prose prose-lg text-gray-200 leading-relaxed">
                             <p class="mb-2 text-lg">
-                                Existimos para impulsar, promover y concienciar
+                                Existimos para <b>impulsar, promover y concienciar
                                 la obra
                                 misionera en toda la Iglesia Wesleyana de
                                 Iberoamérica y el
-                                Caribe. Nuestro sueño es transformar “campos
+                                Caribe</b>. Nuestro sueño es transformar “campos
                                 misioneros” en una
                                 poderosa “fuerza misionera” latina que lleve el
                                 mensaje de
@@ -692,23 +700,23 @@
                                 cumpliendo la Gran Comisión en nuestro contexto
                                 cultural.
                             </p>
-                            <p class="mb-2">
-                                Nuestra meta es unificar un plan de acción,
+                            <p class="mb-2 text-lg">
+                                <b>Nuestra meta es unificar un plan de acción,
                                 comprometiendo a los
                                 Superintendentes buscando líderes misionales y
                                 que cada país
                                 descubra llamados en las misiones y los entrenen
                                 e involucren en
-                                dar, orar e ir.
+                                dar, orar e ir</b>.
                             </p>
-                            <p>
-                                Este movimiento ha sido clave para que la
+                            <p class="text-lg">
+                                <b>Este movimiento ha sido clave para que la
                                 Iglesia Wesleyana
                                 crezca de unos pocos países a más de 20 naciones
                                 en las últimas
                                 décadas, impulsada principalmente por líderes y
                                 misioneros
-                                iberoamericanos.
+                                iberoamericanos.</b>
                             </p>
                         </div>
                     </div>
@@ -747,13 +755,13 @@
         </section>
 
         <!-- JUNTA JIBACAM -->
-        <section class="relative z-10 pt-12 pb-24 px-6 bg-stone-100/40">
+        <section class="relative z-10 pt-12 pb-24 px-6 bg-stone-100/0">
             <img
                 src="assets/jibacam-blackLogo.png"
                 alt="Decoración de fondo"
                 class="absolute top-0 left-0 w-64 md:w-96 opacity-10 pointer-events-none z-0 -translate-x-1/4 -translate-y-1/2" />
             <div class="relative max-w-7xl mx-auto z-10">
-                <div class="mb-20 text-center">
+                <div class="mb-20 text-center reveal">
                     <img src="assets/jibacam-logo.png"
                         class="w-24 mx-auto mb-4">
                     <h2
@@ -767,7 +775,7 @@
                 <div
                     class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
                     <div
-                        class="group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
+                        class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
                         <div
                             class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-yellow-400 group-hover:border-yellow-300 shadow-lg transition-colors duration-300">
                             <img
@@ -793,7 +801,7 @@
                     </div>
 
                     <div
-                        class="group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
+                        class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
                         <div
                             class="w-48 h-48 rounded-full  overflow-hidden mb-8 border-4 border-red-400 group-hover:border-red-500 shadow-lg transition-colors duration-300">
                             <img
@@ -818,7 +826,7 @@
                     </div>
 
                     <div
-                        class="group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
+                        class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
                         <div
                             class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-red-500 group-hover:border-red-600 shadow-lg transition-colors duration-300">
                             <img
@@ -836,7 +844,6 @@
                             <p
                                 class="text-slate-600 mt-1 leading-relaxed text-base">
                                 Licenciado en Teología. 22 años de ministerio,
-                                siendo
                                 docente en la Escuela de Misiones e Institutos
                                 Bíblicos
                                 en Chile.
@@ -845,7 +852,7 @@
                     </div>
 
                     <div
-                        class="group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
+                        class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
                         <div
                             class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-red-500 group-hover:border-red-600 shadow-lg transition-colors duration-300">
                             <img
@@ -870,7 +877,7 @@
                     </div>
 
                     <div
-                        class="group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
+                        class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
                         <div
                             class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-emerald-500 group-hover:border-emerald-600 shadow-lg transition-colors duration-300">
                             <img
@@ -895,7 +902,7 @@
                     </div>
 
                     <div
-                        class="group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
+                        class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
                         <div
                             class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-blue-500 group-hover:border-blue-600 shadow-lg transition-colors duration-300">
                             <img
@@ -952,7 +959,7 @@
             </svg>
 
             <div class="relative max-w-7xl mx-auto z-10">
-                <div class="text-center mb-16 md:mb-20">
+                <div class="reveal text-center mb-16 md:mb-20">
                     <h2
                         class="text-4xl md:text-5xl font-black tracking-tight text-white">
                         NUESTRO IMPACTO
@@ -964,7 +971,7 @@
                 <div
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div
-                        class="group relative bg-[#0a1e3a] h-32 rounded-3xl overflow-hidden border border-yellow-500/30 hover:border-yellow-400/60 shadow-[0_0_15px_rgba(234,179,8,0.05)] hover:shadow-[0_0_25px_rgba(234,179,8,0.15)] transition-all duration-500 flex flex-col min-h-[480px]">
+                        class="reveal group relative bg-[#0a1e3a] h-32 rounded-3xl overflow-hidden border border-yellow-500/30 hover:border-yellow-400/60 shadow-[0_0_15px_rgba(234,179,8,0.05)] hover:shadow-[0_0_25px_rgba(234,179,8,0.15)] transition-all duration-500 flex flex-col min-h-[480px]">
                         <div class="h-1/2 w-full relative overflow-hidden">
                             <img
                                 src="assets/missionarybases-3.png"
@@ -990,7 +997,7 @@
                     </div>
 
                     <div
-                        class="group relative bg-[#0a1e3a] h-32 rounded-3xl overflow-hidden border border-yellow-500/30 hover:border-yellow-400/60 shadow-[0_0_15px_rgba(234,179,8,0.05)] hover:shadow-[0_0_25px_rgba(234,179,8,0.15)] transition-all duration-500 flex flex-col min-h-[480px]">
+                        class="reveal group relative bg-[#0a1e3a] h-32 rounded-3xl overflow-hidden border border-yellow-500/30 hover:border-yellow-400/60 shadow-[0_0_15px_rgba(234,179,8,0.05)] hover:shadow-[0_0_25px_rgba(234,179,8,0.15)] transition-all duration-500 flex flex-col min-h-[480px]">
                         <div class="h-1/2 w-full relative overflow-hidden">
                             <img
                                 src="assets/countries.jpg"
@@ -1023,7 +1030,7 @@
                     </div>
 
                     <div
-                        class="group relative bg-[#0a1e3a] h-32 rounded-3xl overflow-hidden border border-yellow-500/30 hover:border-yellow-400/60 shadow-[0_0_15px_rgba(234,179,8,0.05)] hover:shadow-[0_0_25px_rgba(234,179,8,0.15)] transition-all duration-500 flex flex-col min-h-[480px]">
+                        class="reveal group relative bg-[#0a1e3a] h-32 rounded-3xl overflow-hidden border border-yellow-500/30 hover:border-yellow-400/60 shadow-[0_0_15px_rgba(234,179,8,0.05)] hover:shadow-[0_0_25px_rgba(234,179,8,0.15)] transition-all duration-500 flex flex-col min-h-[480px]">
                         <div class="h-1/2 w-full relative overflow-hidden">
                             <img
                                 src="https://jibacam.net/wp-content/uploads/2025/03/482959382_640777775338771_3238743090135696225_n.jpg"
@@ -1049,7 +1056,7 @@
                     </div>
 
                     <div
-                        class="group relative bg-[#0a1e3a] rounded-3xl overflow-hidden border border-yellow-500/30 hover:border-yellow-400/60 shadow-[0_0_15px_rgba(234,179,8,0.05)] hover:shadow-[0_0_25px_rgba(234,179,8,0.15)] transition-all duration-500 flex flex-col min-h-[480px]">
+                        class="reveal group relative bg-[#0a1e3a] rounded-3xl overflow-hidden border border-yellow-500/30 hover:border-yellow-400/60 shadow-[0_0_15px_rgba(234,179,8,0.05)] hover:shadow-[0_0_25px_rgba(234,179,8,0.15)] transition-all duration-500 flex flex-col min-h-[480px]">
                         <div class="h-1/2 w-full relative overflow-hidden">
                             <img
                                 src="assets/escuela-de-misiones.jpg"
@@ -1091,8 +1098,8 @@
         </section>
 
         <!-- CONFERENCIA JIBACAM -->
-        <section
-            class="py-20 md:py-24 bg-slate-800 relative overflow-hidden font-sans">
+        <section id="conferencia-jibacam"
+            class="py-20 md:pb-24 md:pt-12 bg-slate-800 relative overflow-hidden font-sans">
 
             <div class="absolute inset-0 z-0">
                 <img src="assets/event5.jpg" alt="Fondo decorativo"
@@ -1101,9 +1108,9 @@
 
             <div class="max-w-6xl mx-auto px-6 relative z-10">
                 <img src="/assets/jibacam-text-WhiteLogo.png"
-                    class="w-48 mb-4">
+                    class="reveal w-48 mb-4">
 
-                <div class="text-left mb-16 relative z-10">
+                <div class="reveal text-left mb-16 relative z-10">
                     <h2
                         class="text-4xl md:text-6xl font-black uppercase text-white tracking-tight">
                         CONGRESO<br>
@@ -1120,7 +1127,7 @@
                 </div>
 
                 <div
-                    class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch relative z-10">
+                    class="reveal grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch relative z-10">
 
                     <div
                         class="lg:col-span-4 relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 min-h-[400px] lg:min-h-full group bg-white/5">
@@ -1215,7 +1222,7 @@
         <!-- NOTICIAS -->
         <section class="pt-24 py-12 px-6 bg-slate-50 font-sans">
             <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-16">
+                <div class="reveal text-center mb-16">
                     <h2
                         class="text-4xl md:text-5xl font-black uppercase text-slate-900 tracking-tight">
                         NOTICIAS
@@ -1228,15 +1235,15 @@
                     </p>
                 </div>
 
-                <div class="grid md:grid-cols-3 gap-8 lg:gap-10">
+                <div class="flex flex-wrap justify-center gap-8 lg:gap-10">
                     <article
-                        class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 flex flex-col h-full group">
+                        class="reveal w-full md:w-[calc(33.333%-2rem)] bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 flex flex-col h-full group">
                         <a
                             href="#link-a-tu-noticia-1"
                             class="block overflow-hidden relative">
                             <span
                                 class="absolute top-4 left-4 bg-[#1965e9] text-white text-xs font-bold px-3 py-1.5 rounded-full z-10 shadow-md">
-                                Formación
+                                Eventos
                             </span>
                             <img
                                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop"
@@ -1246,137 +1253,27 @@
 
                         <div class="p-8 flex flex-col flex-grow">
                             <time
-                                class="text-sm text-slate-400 mb-3 block font-medium">15
+                                class="text-sm text-slate-400 mb-3 block font-medium">20
                                 Abril, 2026</time>
 
-                            <a href="#link-a-tu-noticia-1" class="block mb-3">
+                            <a href="#conferencia-jibacam" class="block mb-3">
                                 <h4
-                                    class="text-xl font-black uppercase text-slate-900 group-hover:text-[#1965e9] transition-colors duration-300 line-clamp-2">
-                                    Nueva jornada de capacitación para líderes
-                                    regionales
+                                    class="text-xl font-black uppercase text-slate-900 group-hover:text-[#1965e9] transition-colors duration-300 line-clamp-3">
+                                    Anuncio oficial de Nueva Conferencia
+                                    Iberoamericana 2026
                                 </h4>
                             </a>
 
                             <p
                                 class="text-slate-600 font-light leading-relaxed mb-6 line-clamp-3">
-                                Cientos de líderes se reunieron para recibir
-                                herramientas
-                                teológicas y prácticas, preparándose para
-                                impactar sus entornos
-                                de manera más efectiva este año.
+                                Después de 4 años, anunciamos con entusiasmo
+                                nuestra nueva
+                                conferencia de misiones.
                             </p>
 
                             <div class="mt-auto pt-5 border-t border-slate-100">
                                 <a
-                                    href="#link-a-tu-noticia-1"
-                                    class="inline-flex items-center text-[#1965e9] font-bold text-sm hover:text-blue-800 transition-colors group/link">
-                                    Leer noticia
-                                    <svg
-                                        class="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2.5"
-                                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article
-                        class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 flex flex-col h-full group">
-                        <a
-                            href="#link-a-tu-noticia-2"
-                            class="block overflow-hidden relative">
-                            <span
-                                class="absolute top-4 left-4 bg-[#1965e9] text-white text-xs font-bold px-3 py-1.5 rounded-full z-10 shadow-md">
-                                Misiones
-                            </span>
-                            <img
-                                src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=800&auto=format&fit=crop"
-                                class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
-                                alt="Imagen de la noticia" />
-                        </a>
-                        <div class="p-8 flex flex-col flex-grow">
-                            <time
-                                class="text-sm text-slate-400 mb-3 block font-medium">02
-                                Abril, 2026</time>
-                            <a href="#link-a-tu-noticia-2" class="block mb-3">
-                                <h4
-                                    class="text-xl font-black uppercase text-slate-900 group-hover:text-[#1965e9] transition-colors duration-300 line-clamp-2">
-                                    Apertura de nueva base misionera en la
-                                    región
-                                </h4>
-                            </a>
-                            <p
-                                class="text-slate-600 font-light leading-relaxed mb-6 line-clamp-3">
-                                Un nuevo espacio dedicado a proyectos sociales y
-                                de discipulado
-                                ha abierto sus puertas para atender las
-                                necesidades reales de la
-                                comunidad local.
-                            </p>
-                            <div class="mt-auto pt-5 border-t border-slate-100">
-                                <a
-                                    href="#link-a-tu-noticia-2"
-                                    class="inline-flex items-center text-[#1965e9] font-bold text-sm hover:text-blue-800 transition-colors group/link">
-                                    Leer noticia
-                                    <svg
-                                        class="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2.5"
-                                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article
-                        class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 flex flex-col h-full group">
-                        <a
-                            href="#link-a-tu-noticia-3"
-                            class="block overflow-hidden relative">
-                            <span
-                                class="absolute top-4 left-4 bg-[#1965e9] text-white text-xs font-bold px-3 py-1.5 rounded-full z-10 shadow-md">
-                                Eventos
-                            </span>
-                            <img
-                                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800&auto=format&fit=crop"
-                                class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
-                                alt="Imagen de la noticia" />
-                        </a>
-                        <div class="p-8 flex flex-col flex-grow">
-                            <time
-                                class="text-sm text-slate-400 mb-3 block font-medium">28
-                                Marzo, 2026</time>
-                            <a href="#link-a-tu-noticia-3" class="block mb-3">
-                                <h4
-                                    class="text-xl font-black uppercase text-slate-900 group-hover:text-[#1965e9] transition-colors duration-300 line-clamp-2">
-                                    Movilización juvenil supera expectativas
-                                    anuales
-                                </h4>
-                            </a>
-                            <p
-                                class="text-slate-600 font-light leading-relaxed mb-6 line-clamp-3">
-                                Acompañamos a decenas de iglesias locales que
-                                han logrado
-                                desarrollar una visión misionera vibrante y
-                                planes de trabajo
-                                efectivos con sus jóvenes.
-                            </p>
-                            <div class="mt-auto pt-5 border-t border-slate-100">
-                                <a
-                                    href="#link-a-tu-noticia-3"
+                                    href="#conferencia-jibacam"
                                     class="inline-flex items-center text-[#1965e9] font-bold text-sm hover:text-blue-800 transition-colors group/link">
                                     Leer noticia
                                     <svg
@@ -1402,7 +1299,7 @@
         <section class="px-6 bg-slate-50 font-sans">
             <div class="max-w-6xl mx-auto">
                 <div
-                    class="flex flex-col md:flex-row justify-between items-end mb-12">
+                    class="reveal flex flex-col md:flex-row justify-between items-end mb-12">
                     <div>
                         <h2
                             class="text-4xl md:text-5xl font-black uppercase text-slate-900 tracking-tight">
@@ -1411,6 +1308,7 @@
                         <div
                             class="h-1.5 w-24 bg-[#1965e9] mt-6 rounded-full"></div>
                     </div>
+                    
                     <a
                         href="#"
                         class="hidden md:inline-flex items-center text-[#1965e9] font-bold hover:underline mt-4 md:mt-0">
@@ -1430,6 +1328,25 @@
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-8">
+            
+            <div class="reveal col-span-full py-20 px-6 flex flex-col items-center justify-center text-center bg-slate-100/50 rounded-3xl border-2 border-dashed border-slate-200">
+                <div class="bg-slate-200 p-5 rounded-full mb-6">
+                    <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                
+                <h3 class="text-2xl font-bold text-slate-400 uppercase tracking-wider">
+                    Sin próximas actividades por el momento
+                </h3>
+                <p class="text-slate-500 mt-2 font-light">
+                    Estamos preparando nuevos eventos para ti. ¡Vuelve pronto!
+                </p>
+            </div>
+            </div>
+    </div>
+
+                <!-- <div class="grid md:grid-cols-3 gap-8">
                     <div
                         class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 group relative flex flex-col h-full hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
                         <div class="h-56 relative overflow-hidden">
@@ -1643,7 +1560,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -1718,35 +1635,37 @@
                 </div>
 
                 <div class="bg-gray-50 p-8 rounded-2xl">
-                    <form class="space-y-4">
+                    <form action="https://formspree.io/f/tu_id_aqui" method="POST" class="space-y-4">
                         <div>
-                            <label
-                                class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
                             <input
+                                name="nombre"
                                 type="text"
+                                required
                                 class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none"
                                 placeholder="Tu nombre" />
                         </div>
                         <div>
-                            <label
-                                class="block text-sm font-medium text-gray-700 mb-1">Correo
-                                Electrónico</label>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
                             <input
+                                name="email"
                                 type="email"
+                                required
                                 class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none"
                                 placeholder="tu@correo.com" />
                         </div>
                         <div>
-                            <label
-                                class="block text-sm font-medium text-gray-700 mb-1">Mensaje
-                                / Motivo de Oración</label>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Mensaje / Motivo de Oración</label>
                             <textarea
+                                name="mensaje"
                                 rows="4"
+                                required
                                 class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none"
                                 placeholder="¿En qué podemos ayudarte?"></textarea>
                         </div>
+                        
                         <button
-                            type="button"
+                            type="submit"
                             class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
                             Enviar Mensaje
                         </button>
@@ -1754,6 +1673,19 @@
                 </div>
             </div>
         </section>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.reveal', {
+            origin: 'bottom',
+            distance: '40px',
+            easing: 'ease-out',
+            interval: 120,
+            delay: 0,
+            duration: 800,
+            reset: false
+        });
+    </script>
 
         <script>
       const carrusel = document.getElementById("carrusel");
