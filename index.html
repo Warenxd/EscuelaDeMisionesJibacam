@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Landing Page - Iglesia</title>
-        <script src="https://cdn.tailwindcss.com"></script>
 
-        <script>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page - Iglesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -18,16 +19,18 @@
             },
         };
     </script>
-        <style>
+    <style>
         .bg-patron {
             background-color: #f8fafc;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2d2d2' fill-opacity='0.14'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2d2d2' fill-opacity='0.19'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
+
         .bg-patron2 {
             background-color: #f8fafc;
             /* He bajado el fill-opacity a 0.1 para que sea muy sutil */
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d2d2d2' fill-opacity='0.1'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
+
         .bg-patron-dark {
             background-color: #0a4393;
             /* He cambiado el fill del SVG a blanco (%23ffffff) y bajado la opacidad para que sea sutil */
@@ -38,1307 +41,1089 @@
             scroll-behavior: smooth;
         }
     </style>
-    </head>
+</head>
 
-    <body class="min-h-screen bg-patron text-gray-800 font-sans">
-        <!-- CARRUSEL -->
-        <section
-            class="relative bg-gray-900 overflow-hidden h-[65vh] flex items-center justify-center">
-            <div
-                class="absolute inset-0 w-full h-full flex transition-transform duration-700 ease-in-out"
-                id="carrusel">
-                <div class="min-w-full h-full flex-shrink-0 relative">
-                    <img
-                        src="https://jibacam.net/wp-content/uploads/2026/04/Afiche-Jibacam2026-5.png"
-                        alt="Noticias"
-                        class="absolute inset-0 w-full h-full object-cover object-[center_20%] opacity-40" />
+<body class="min-h-screen bg-patron text-gray-800 font-sans">
+    <!-- CARRUSEL -->
+    <section class="relative bg-gray-900 overflow-hidden h-[65vh] flex items-center justify-center">
+        <div class="absolute inset-0 w-full h-full flex transition-transform duration-700 ease-in-out" id="carrusel">
+            <div class="min-w-full h-full flex-shrink-0 relative">
+                <img src="https://jibacam.net/wp-content/uploads/2026/04/Afiche-Jibacam2026-5.png" alt="Noticias"
+                    class="absolute inset-0 w-full h-full object-cover object-[center_20%] opacity-40" />
 
-                    <div
-                        class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
-                        <span
-                            class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4 shadow-sm">
-                            Actualidad
-                        </span>
+                <div
+                    class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
+                    <span class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4 shadow-sm">
+                        Actualidad
+                    </span>
 
-                        <h1
-                            class="text-5xl md:text-6xl font-black mb-4 leading-tight drop-shadow-md">
-                            CONFERENCIA DE MISIONES JIBACAM 2026
-                        </h1>
+                    <h1 class="text-5xl md:text-6xl font-black mb-4 leading-tight drop-shadow-md">
+                        CONFERENCIA DE MISIONES JIBACAM 2026
+                    </h1>
 
-                        <p class="text-xl text-gray-200 mb-8 font-light">
-                            Nuestro gran evento cada 4 años.
-                        </p>
-                        <a href="#conferencia-jibacam"
-                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
-                            Saber más
-                        </a>
-                    </div>
-                </div>
-
-                <div class="min-w-full h-full flex-shrink-0 relative">
-                    <img
-                        src="assets/news.jpg"
-                        alt="Noticias"
-                        class="absolute inset-0 w-full h-full object-cover opacity-40" />
-                    <div
-                        class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
-                        <span
-                            class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4">Actualidad</span>
-                        <h1
-                            class="text-5xl md:text-6xl font-black mb-6 leading-tight">
-                            NOTICIAS
-                        </h1>
-                        <p class="text-xl text-gray-200 mb-8">
-                            Información de eventos y programas de la región y
-                            las áreas.
-                        </p>
-                        <a href="https://jibacam.net/noticias/"
-                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
-                            Ver Eventos
-                        </a>
-                    </div>
-                </div>
-
-                <div class="min-w-full h-full flex-shrink-0 relative">
-                    <img
-                        src="assets/missionarybases.jpg"
-                        alt="Bases de Misiones"
-                        class="absolute inset-0 w-full h-full object-cover opacity-40" />
-                    <div
-                        class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
-                        <span
-                            class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4">Proyectos</span>
-                        <h1
-                            class="text-5xl md:text-6xl font-black mb-6 leading-tight">
-                            BASES MISIONERAS
-                        </h1>
-                        <p class="text-xl text-gray-200 mb-8">
-                            Información acerca de los proyectos de misiones en
-                            desarrollo.
-                        </p>
-                        <a href="https://jibacam.net/bases-de-misiones/"
-                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
-                            Conocer más
-                        </a>
-                    </div>
-                </div>
-
-                <div class="min-w-full h-full flex-shrink-0 relative">
-                    <img
-                        src="assets/school1.jpg"
-                        alt="Escuela de Misiones"
-                        class="absolute inset-0 w-full h-full object-cover opacity-40" />
-                    <div
-                        class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
-                        <span
-                            class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4">Educación</span>
-                        <h1
-                            class="text-5xl md:text-6xl font-black mb-6 leading-tight">
-                            ESCUELA DE MISIONES
-                        </h1>
-                        <p class="text-xl text-gray-200 mb-8">
-                            Información detallada sobre nuestro curso de
-                            preparación de
-                            misiones.
-                        </p>
-                        <a
-                            href="https://jibacam.net/escuela-de-mision-de-jibacam"
-                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
-                            Ver Programa
-                        </a>
-                    </div>
-                </div>
-
-                <div class="min-w-full h-full flex-shrink-0 relative">
-                    <img
-                        src="assets/cross-cultural training3.jpg"
-                        alt="Entrenamiento Transcultural"
-                        class="absolute inset-0 w-full h-full object-cover opacity-40" />
-                    <div
-                        class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
-                        <span
-                            class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4">Capacitación</span>
-                        <h1
-                            class="text-5xl md:text-6xl font-black mb-6 leading-tight">
-                            ENTRENAMIENTO TRANSCULTURAL
-                        </h1>
-                        <p class="text-xl text-gray-200 mb-8">
-                            Revisión de los próximos eventos y jornadas de
-                            entrenamiento.
-                        </p>
-                        <a
-                            href="https://jibacam.net/entrenamiento-linea-cronologio/"
-                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
-                            Explorar
-                        </a>
-                    </div>
-                </div>
-
-                <div class="min-w-full h-full flex-shrink-0 relative">
-                    <img
-                        src="assets/library2.jpg"
-                        alt="Libros"
-                        class="absolute inset-0 w-full h-full object-cover opacity-40" />
-                    <div
-                        class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
-                        <span
-                            class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4">Biblioteca</span>
-                        <h1
-                            class="text-5xl md:text-6xl font-black mb-6 leading-tight">
-                            RECURSOS LITERARIOS
-                        </h1>
-                        <p class="text-xl text-gray-200 mb-8">
-                            Accede a nuestra selección de libros recomendados
-                            para tu
-                            formación.
-                        </p>
-                        <a href="https://jibacam.net/libros/"
-                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
-                            Ver Catálogo
-                        </a>
-                    </div>
-                </div>
-
-                <div class="min-w-full h-full flex-shrink-0 relative">
-                    <img
-                        src="assets/event.jpg"
-                        alt="Seminarios"
-                        class="absolute inset-0 w-full h-full object-cover opacity-40" />
-                    <div
-                        class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
-                        <span
-                            class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4">Multimedia</span>
-                        <h1
-                            class="text-5xl md:text-6xl font-black mb-6 leading-tight">
-                            SEMINARIOS
-                        </h1>
-                        <p class="text-xl text-gray-200 mb-8">
-                            Material audiovisual y grabaciones de nuestros
-                            últimos seminarios.
-                        </p>
-                        <a href="https://jibacam.net/seminarios-de-video/"
-                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
-                            Ver Videos
-                        </a>
-                    </div>
-                </div>
-
-                <div class="min-w-full h-full flex-shrink-0 relative">
-                    <img
-                        src="assets/together2.jpg"
-                        alt="Cuidado Intensivo"
-                        class="absolute inset-0 w-full h-full object-cover opacity-40" />
-                    <div
-                        class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
-                        <span
-                            class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4">Apoyo
-                            Integral</span>
-                        <h1
-                            class="text-5xl md:text-6xl font-black mb-6 leading-tight">
-                            CUIDADO DE OBREROS
-                        </h1>
-                        <p class="text-xl text-gray-200 mb-8">
-                            Programas de asistencia, acompañamiento y cuidado
-                            intensivo para
-                            obreros.
-                        </p>
-                        <a
-                            href="https://jibacam.net/cuidado-intensivo-de-obrero/"
-                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
-                            Más Información
-                        </a>
-                    </div>
-                </div>
-
-                <div class="min-w-full h-full flex-shrink-0 relative">
-                    <img
-                        src="assets/missions.jpg"
-                        alt="Enlaces"
-                        class="absolute inset-0 w-full h-full object-cover opacity-40" />
-                    <div
-                        class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
-                        <span
-                            class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4">Conexiones</span>
-                        <h1
-                            class="text-5xl md:text-6xl font-black mb-6 leading-tight">
-                            ENLACES DE INTERÉS
-                        </h1>
-                        <p class="text-xl text-gray-200 mb-8">
-                            Otros sitios y plataformas aliadas con información
-                            perteneciente a
-                            misiones.
-                        </p>
-                        <a href="https://jibacam.net/enlaces/"
-                            class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
-                            Visitar Sitios
-                        </a>
-                    </div>
+                    <p class="text-xl text-gray-200 mb-8 font-light">
+                        Nuestro gran evento cada 4 años.
+                    </p>
+                    <a href="#conferencia-jibacam"
+                        class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                        Saber más
+                    </a>
                 </div>
             </div>
 
-            <div class="absolute inset-y-0 left-0 flex items-center pl-4 z-20">
-                <button
-                    class="w-12 h-12 flex items-center justify-center rounded-full bg-black/30 text-white hover:bg-black/60 focus:outline-none transition"
-                    id="prevSlide">
-                    <svg
-                        class="w-6 h-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24">
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M15 19l-7-7 7-7"></path>
-                    </svg>
-                </button>
-            </div>
-            <div class="absolute inset-y-0 right-0 flex items-center pr-4 z-20">
-                <button
-                    class="w-12 h-12 flex items-center justify-center rounded-full bg-black/30 text-white hover:bg-black/60 focus:outline-none transition"
-                    id="nextSlide">
-                    <svg
-                        class="w-6 h-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24">
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </button>
+            <div class="min-w-full h-full flex-shrink-0 relative">
+                <img src="assets/news.jpg" alt="Noticias"
+                    class="absolute inset-0 w-full h-full object-cover opacity-40" />
+                <div
+                    class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
+                    <span
+                        class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4">Actualidad</span>
+                    <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">
+                        NOTICIAS
+                    </h1>
+                    <p class="text-xl text-gray-200 mb-8">
+                        Información de eventos y programas de la región y
+                        las áreas.
+                    </p>
+                    <a href="https://jibacam.net/noticias/"
+                        class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                        Ver Eventos
+                    </a>
+                </div>
             </div>
 
-            <div
-                class="absolute bottom-6 inset-x-0 flex justify-center space-x-2 z-20">
-                <button
-                    class="w-3 h-3 rounded-full bg-white opacity-100 transition-opacity carrusel-indicator active"
-                    data-slide-index="0"></button>
-                <button
-                    class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity carrusel-indicator"
-                    data-slide-index="1"></button>
-                <button
-                    class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity carrusel-indicator"
-                    data-slide-index="2"></button>
-                <button
-                    class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity carrusel-indicator"
-                    data-slide-index="3"></button>
-                <button
-                    class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity carrusel-indicator"
-                    data-slide-index="4"></button>
-                <button
-                    class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity carrusel-indicator"
-                    data-slide-index="5"></button>
-                <button
-                    class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity carrusel-indicator"
-                    data-slide-index="6"></button>
-                <button
-                    class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity carrusel-indicator"
-                    data-slide-index="7"></button>
-                <button
-                    class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity carrusel-indicator"
-                    data-slide-index="8"></button>
+            <div class="min-w-full h-full flex-shrink-0 relative">
+                <img src="assets/missionarybases.jpg" alt="Bases de Misiones"
+                    class="absolute inset-0 w-full h-full object-cover opacity-40" />
+                <div
+                    class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
+                    <span
+                        class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4">Proyectos</span>
+                    <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">
+                        BASES MISIONERAS
+                    </h1>
+                    <p class="text-xl text-gray-200 mb-8">
+                        Información acerca de los proyectos de misiones en
+                        desarrollo.
+                    </p>
+                    <a href="https://jibacam.net/bases-de-misiones/"
+                        class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                        Conocer más
+                    </a>
+                </div>
             </div>
-        </section>
 
-        <!-- QUÉ ES JIBACAM -->
-        <section class="relative py-16 px-4 max-w-7xl mx-auto reveal overflow-hidden rounded-[3rem]">
-            <div class="flex flex-col lg:flex-row items-center gap-12">
-                <div class="lg:w-1/2">
-                    <h2
-                        class="text-5xl font-black mb-8 text-gray-900 leading-tight">
-                        ¿QUÉ ES <span class="text-[#0a4393]">JIBACAM?</span>
-                    </h2>
+            <div class="min-w-full h-full flex-shrink-0 relative">
+                <img src="assets/school1.jpg" alt="Escuela de Misiones"
+                    class="absolute inset-0 w-full h-full object-cover opacity-40" />
+                <div
+                    class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
+                    <span
+                        class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4">Educación</span>
+                    <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">
+                        ESCUELA DE MISIONES
+                    </h1>
+                    <p class="text-xl text-gray-200 mb-8">
+                        Información detallada sobre nuestro curso de
+                        preparación de
+                        misiones.
+                    </p>
+                    <a href="https://jibacam.net/escuela-de-mision-de-jibacam"
+                        class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                        Ver Programa
+                    </a>
+                </div>
+            </div>
 
-                    <div
-                        class="space-y-6 text-gray-600 text-lg leading-relaxed">
-                        <p>
-                            Nacida en 1999 para expandir la obra misionera,
-                            <b>JIBACAM</b> significa
-                            <b>"Junta Iberoamericana de Misiones y del Caribe".</b>
-                            Es el <b>Departamento de
-                                Misiones de la Iglesia Wesleyana.</b>
-                        </p>
-                        <p>
-                            Hemos avanzado de ser sólo un promotor a
-                            organizarnos como una <b>agencia
+            <div class="min-w-full h-full flex-shrink-0 relative">
+                <img src="assets/cross-cultural training3.jpg" alt="Entrenamiento Transcultural"
+                    class="absolute inset-0 w-full h-full object-cover opacity-40" />
+                <div
+                    class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
+                    <span
+                        class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4">Capacitación</span>
+                    <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">
+                        ENTRENAMIENTO TRANSCULTURAL
+                    </h1>
+                    <p class="text-xl text-gray-200 mb-8">
+                        Revisión de los próximos eventos y jornadas de
+                        entrenamiento.
+                    </p>
+                    <a href="https://jibacam.net/entrenamiento-linea-cronologio/"
+                        class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                        Explorar
+                    </a>
+                </div>
+            </div>
+
+            <div class="min-w-full h-full flex-shrink-0 relative">
+                <img src="assets/library2.jpg" alt="Libros"
+                    class="absolute inset-0 w-full h-full object-cover opacity-40" />
+                <div
+                    class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
+                    <span
+                        class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4">Biblioteca</span>
+                    <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">
+                        RECURSOS LITERARIOS
+                    </h1>
+                    <p class="text-xl text-gray-200 mb-8">
+                        Accede a nuestra selección de libros recomendados
+                        para tu
+                        formación.
+                    </p>
+                    <a href="https://jibacam.net/libros/"
+                        class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                        Ver Catálogo
+                    </a>
+                </div>
+            </div>
+
+            <div class="min-w-full h-full flex-shrink-0 relative">
+                <img src="assets/event.jpg" alt="Seminarios"
+                    class="absolute inset-0 w-full h-full object-cover opacity-40" />
+                <div
+                    class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
+                    <span
+                        class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4">Multimedia</span>
+                    <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">
+                        SEMINARIOS
+                    </h1>
+                    <p class="text-xl text-gray-200 mb-8">
+                        Material audiovisual y grabaciones de nuestros
+                        últimos seminarios.
+                    </p>
+                    <a href="https://jibacam.net/seminarios-de-video/"
+                        class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                        Ver Videos
+                    </a>
+                </div>
+            </div>
+
+            <div class="min-w-full h-full flex-shrink-0 relative">
+                <img src="assets/together2.jpg" alt="Cuidado Intensivo"
+                    class="absolute inset-0 w-full h-full object-cover opacity-40" />
+                <div
+                    class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
+                    <span class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4">Apoyo
+                        Integral</span>
+                    <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">
+                        CUIDADO DE OBREROS
+                    </h1>
+                    <p class="text-xl text-gray-200 mb-8">
+                        Programas de asistencia, acompañamiento y cuidado
+                        intensivo para
+                        obreros.
+                    </p>
+                    <a href="https://jibacam.net/cuidado-intensivo-de-obrero/"
+                        class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                        Más Información
+                    </a>
+                </div>
+            </div>
+
+            <div class="min-w-full h-full flex-shrink-0 relative">
+                <img src="assets/missions.jpg" alt="Enlaces"
+                    class="absolute inset-0 w-full h-full object-cover opacity-40" />
+                <div
+                    class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto z-10 text-white">
+                    <span
+                        class="inline-block py-1 px-3 rounded-full bg-blue-600 text-sm font-semibold mb-4">Conexiones</span>
+                    <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">
+                        ENLACES DE INTERÉS
+                    </h1>
+                    <p class="text-xl text-gray-200 mb-8">
+                        Otros sitios y plataformas aliadas con información
+                        perteneciente a
+                        misiones.
+                    </p>
+                    <a href="https://jibacam.net/enlaces/"
+                        class="inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">
+                        Visitar Sitios
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute inset-y-0 left-0 flex items-center pl-4 z-20">
+            <button
+                class="w-12 h-12 flex items-center justify-center rounded-full bg-black/30 text-white hover:bg-black/60 focus:outline-none transition"
+                id="prevSlide">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-4 z-20">
+            <button
+                class="w-12 h-12 flex items-center justify-center rounded-full bg-black/30 text-white hover:bg-black/60 focus:outline-none transition"
+                id="nextSlide">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="absolute bottom-6 inset-x-0 flex justify-center space-x-2 z-20">
+            <button class="w-3 h-3 rounded-full bg-white opacity-100 transition-opacity carrusel-indicator active"
+                data-slide-index="0"></button>
+            <button class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity carrusel-indicator"
+                data-slide-index="1"></button>
+            <button class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity carrusel-indicator"
+                data-slide-index="2"></button>
+            <button class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity carrusel-indicator"
+                data-slide-index="3"></button>
+            <button class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity carrusel-indicator"
+                data-slide-index="4"></button>
+            <button class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity carrusel-indicator"
+                data-slide-index="5"></button>
+            <button class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity carrusel-indicator"
+                data-slide-index="6"></button>
+            <button class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity carrusel-indicator"
+                data-slide-index="7"></button>
+            <button class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity carrusel-indicator"
+                data-slide-index="8"></button>
+        </div>
+    </section>
+
+    <!-- QUÉ ES JIBACAM -->
+    <section class="relative py-16 px-4 max-w-7xl mx-auto reveal overflow-hidden rounded-[3rem]">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+                <h2 class="text-5xl font-black mb-8 text-gray-900 leading-tight">
+                    ¿QUÉ ES <span class="text-[#0a4393]">JIBACAM?</span>
+                </h2>
+
+                <div class="space-y-6 text-gray-600 text-lg leading-relaxed">
+                    <p>
+                        Nacida en 1999 para expandir la obra misionera,
+                        <b>JIBACAM</b> significa
+                        <b>"Junta Iberoamericana de Misiones y del Caribe".</b>
+                        Es el <b>Departamento de
+                            Misiones de la Iglesia Wesleyana.</b>
+                    </p>
+                    <p>
+                        Hemos avanzado de ser sólo un promotor a
+                        organizarnos como una <b>agencia
                             misionera de envío y formación de misioneros con
                             todos los desafíos
                             que esto representa para el Reino</b>. <br>
-                            Durante años ha motivado, desafiado,
-                            instruido y capacitado líderes misionales
-                            a través del congreso bianual Misionero
-                            buscando tener una Iglesia apasionada
-                            por la misión de Dios, y de esta forma
-                            llegar a los pueblos no alcanzados con el
-                            mensaje del evangelio.
-                        </p>
-                        <p>
-                            <b>Estamos encargados de gestionar la obra misionera y
+                        Durante años ha motivado, desafiado,
+                        instruido y capacitado líderes misionales
+                        a través del congreso bianual Misionero
+                        buscando tener una Iglesia apasionada
+                        por la misión de Dios, y de esta forma
+                        llegar a los pueblos no alcanzados con el
+                        mensaje del evangelio.
+                    </p>
+                    <p>
+                        <b>Estamos encargados de gestionar la obra misionera y
                             plantar nuevas
                             Iglesias Wesleyanas en el contexto Iberoamericano y
                             Caribeño,
                             creyendo en un evangelio práctico que transforma
                             vidas</b>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lg:w-1/2 relative">
+                <div class="p-4 bg-white rounded-[2rem] shadow-2xl shadow-blue-100/50">
+                    <img src="assets/first-jibacam-board.jpeg" alt="Equipo JIBACAM"
+                        class="rounded-[1.5rem] w-full h-auto object-cover scale-105" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50/50 reveal">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+
+            <div
+                class="bg-white p-12 rounded-3xl shadow-sm hover:shadow-md transition-shadow text-center border border-gray-50">
+                <div
+                    class="inline-flex items-center justify-center w-20 h-20 bg-blue-50 text-blue-600 rounded-2xl mb-8">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black mb-4 text-gray-800 uppercase tracking-tight">Nuestra
+                    Visión</h3>
+                <p class="text-gray-500 text-lg leading-relaxed">
+                    Tener una iglesia plenamente involucrada en el
+                    cumplimiento de la misión de Dios.
+                </p>
+            </div>
+
+            <div
+                class="bg-white p-12 rounded-3xl shadow-sm hover:shadow-md transition-shadow text-center border border-gray-50">
+                <div class="inline-flex items-center justify-center w-20 h-20 bg-red-50 text-red-500 rounded-2xl mb-8">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black mb-4 text-gray-800 uppercase tracking-tight">Nuestra
+                    Misión</h3>
+                <p class="text-gray-500 text-lg leading-relaxed">
+                    Equipar, discipular y enviar a cada creyente para
+                    compartir el evangelio y servir a nuestra comunidad con
+                    el amor de Jesús.
+                </p>
+            </div>
+
+            <div
+                class="bg-white p-12 rounded-3xl shadow-sm hover:shadow-md transition-shadow text-center border border-gray-50">
+                <div
+                    class="inline-flex items-center justify-center w-20 h-20 bg-emerald-50 text-emerald-500 rounded-2xl mb-8">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black mb-4 text-gray-800 uppercase tracking-tight">Nuestro
+                    Propósito</h3>
+                <p class="text-gray-500 text-lg leading-relaxed">
+                    Existimos para impulsar, promover, y concienciar la Obra
+                    Misionera en la Iglesia.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- QUÉ HACEMOS -->
+    <section class="py-24 px-6 bg-slate-100 font-sans">
+        <div class="max-w-6xl mx-auto">
+            <div class="reveal text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black uppercase text-slate-900 tracking-tight">
+                    ¿Qué Hacemos?
+                </h2>
+                <div class="h-1.5 w-24 bg-[#1965e9] mx-auto mt-6 rounded-full"></div>
+                <p class="text-slate-500 mt-6 text-lg font-light">
+                    Nuestro trabajo en acción para el avance de la obra
+                    misionera.
+                </p>
+            </div>
+
+            <div class="reveal grid md:grid-cols-3 gap-8 lg:gap-10">
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 group">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop"
+                            class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                            alt="Formación" />
+                    </div>
+                    <div class="p-8">
+                        <h4
+                            class="text-xl font-black text-slate-900 mb-3 group-hover:text-[#1965e9] transition-colors duration-300">
+                            Capacitación y Formación
+                        </h4>
+                        <p class="text-slate-600 font-light leading-relaxed">
+                            Formamos líderes con herramientas teológicas,
+                            prácticas y
+                            humanas para impactar su entorno y el campo
+                            misionero.
                         </p>
                     </div>
                 </div>
 
-                <div class="lg:w-1/2 relative">
-                    <div
-                        class="p-4 bg-white rounded-[2rem] shadow-2xl shadow-blue-100/50">
-                        <img
-                            src="assets/first-jibacam-board.jpeg"
-                            alt="Equipo JIBACAM"
-                            class="rounded-[1.5rem] w-full h-auto object-cover scale-105" />
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 group">
+                    <div class="overflow-hidden">
+                        <img src="assets/missionarybases2.jpg"
+                            class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                            alt="Misión" />
+                    </div>
+                    <div class="p-8">
+                        <h4
+                            class="text-xl font-black text-slate-900 mb-3 group-hover:text-[#1965e9] transition-colors duration-300">
+                            Gestión de Bases Misioneras
+                        </h4>
+                        <p class="text-slate-600 font-light leading-relaxed">
+                            Apoyamos proyectos misioneros, sociales y de
+                            discipulado
+                            adaptados a las necesidades reales de cada
+                            cultura.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 group">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800&auto=format&fit=crop"
+                            class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                            alt="Asesoría" />
+                    </div>
+                    <div class="p-8">
+                        <h4
+                            class="text-xl font-black text-slate-900 mb-3 group-hover:text-[#1965e9] transition-colors duration-300">
+                            Movilización y Asesoría
+                        </h4>
+                        <p class="text-slate-600 font-light leading-relaxed">
+                            Acompañamos iglesias a desarrollar visión
+                            misionera, planes de
+                            trabajo efectivos y compromiso global.
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="py-16 bg-gray-50/50 reveal">
-            <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+    <!-- SOBRE NOSOTROS -->
+    <section class="pt-24 bg-gray-200">
+        <div class="reveal max-w-6xl mx-auto px-6 text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tight text-slate-900">
+                Sobre Nosotros
+            </h2>
+            <div class="h-1.5 w-24 bg-[#1965e9] mx-auto mt-6 rounded-full"></div>
+        </div>
 
-                <div
-                    class="bg-white p-12 rounded-3xl shadow-sm hover:shadow-md transition-shadow text-center border border-gray-50">
-                    <div
-                        class="inline-flex items-center justify-center w-20 h-20 bg-blue-50 text-blue-600 rounded-2xl mb-8">
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="1.5"
-                                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
-                        </svg>
+        <div class="reveal bg-stone-150 pb-20 px-6">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center reveal">
+                <div class="flex flex-col justify-center order-2 md:order-1">
+                    <h3 class="text-3xl font-black mb-6 text-slate-900">NUESTRA
+                        HISTORIA</h3>
+                    <div class="prose prose-lg text-gray-600 leading-relaxed">
+                        <p class="mb-4">
+                            Nuestras raíces se remontan a 1843 en Nueva
+                            York, con una intensa pasión por la santidad y
+                            las misiones. Tras décadas de expansión en
+                            África e Iberoamérica, en 1968 nace la
+                            <strong>Iglesia Wesleyana (The Wesleyan
+                                Church)</strong> mediante la unión de dos
+                            organizaciones históricas.
+                        </p>
+                        <p>
+                            Entre 1904 y 1959, la semilla fue plantada en
+                            Perú, México, Brasil, Colombia, Puerto Rico y
+                            Honduras, estableciendo un legado de fe que
+                            superó fronteras y desafíos culturales.
+                        </p>
                     </div>
-                    <h3
-                        class="text-2xl font-black mb-4 text-gray-800 uppercase tracking-tight">Nuestra
-                        Visión</h3>
-                    <p class="text-gray-500 text-lg leading-relaxed">
-                        Tener una iglesia plenamente involucrada en el
-                        cumplimiento de la misión de Dios.
-                    </p>
                 </div>
-
                 <div
-                    class="bg-white p-12 rounded-3xl shadow-sm hover:shadow-md transition-shadow text-center border border-gray-50">
-                    <div
-                        class="inline-flex items-center justify-center w-20 h-20 bg-red-50 text-red-500 rounded-2xl mb-8">
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="1.5"
-                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                        </svg>
-                    </div>
-                    <h3
-                        class="text-2xl font-black mb-4 text-gray-800 uppercase tracking-tight">Nuestra
-                        Misión</h3>
-                    <p class="text-gray-500 text-lg leading-relaxed">
-                        Equipar, discipular y enviar a cada creyente para
-                        compartir el evangelio y servir a nuestra comunidad con
-                        el amor de Jesús.
-                    </p>
+                    class="relative w-full h-80 md:h-[400px] rounded-3xl overflow-hidden shadow-lg group order-1 md:order-2">
+                    <img src="assets/wesleyan.jpeg" alt="Orígenes"
+                        class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
-
-                <div
-                    class="bg-white p-12 rounded-3xl shadow-sm hover:shadow-md transition-shadow text-center border border-gray-50">
-                    <div
-                        class="inline-flex items-center justify-center w-20 h-20 bg-emerald-50 text-emerald-500 rounded-2xl mb-8">
-                        <svg class="w-10 h-10" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="1.5"
-                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-                    <h3
-                        class="text-2xl font-black mb-4 text-gray-800 uppercase tracking-tight">Nuestro
-                        Propósito</h3>
-                    <p class="text-gray-500 text-lg leading-relaxed">
-                        Existimos para impulsar, promover, y concienciar la Obra
-                        Misionera en la Iglesia.
-                    </p>
-                </div>
-
             </div>
-        </section>
+        </div>
 
-        <!-- QUÉ HACEMOS -->
-        <section class="py-24 px-6 bg-slate-100 font-sans">
-            <div class="max-w-6xl mx-auto">
-                <div class="reveal text-center mb-16">
-                    <h2
-                        class="text-4xl md:text-5xl font-black uppercase text-slate-900 tracking-tight">
-                        ¿Qué Hacemos?
+        <div class="reveal bg-gray-50 py-20 px-6">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center reveal">
+                <div class="relative w-full h-80 md:h-[400px] rounded-3xl overflow-hidden shadow-lg group">
+                    <img src="assets/first-conference.png" alt="Congresos"
+                        class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-3xl font-black mb-6 text-slate-900">NUESTRO
+                        DESARROLLO</h3>
+                    <div class="prose prose-lg text-gray-600 leading-relaxed">
+                        <p class="mb-4">
+                            El año 1996 marcó un punto de inflexión con el
+                            Congreso de Misiones en Puerto Rico. Bajo el
+                            lema "Pídeme y te daré las naciones", se forjó
+                            un espíritu de unidad que impulsó nuevos campos
+                            en Panamá, Nicaragua y Chile.
+                        </p>
+                        <p>
+                            En 1999, durante el IV Congreso en Bogotá, se
+                            formalizó oficialmente la
+                            <strong>JIBACAM</strong>. Este movimiento
+                            consolidó la visión de una iglesia latina
+                            enviando misioneros a lugares tan lejanos como
+                            Guinea Ecuatorial, África.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal bg-stone-200/80 py-20 px-6">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center reveal">
+                <div class="flex flex-col justify-center order-2 md:order-1">
+                    <h3 class="text-3xl font-black mb-6 text-slate-900">JIBACAM
+                        HOY</h3>
+                    <div class="prose prose-lg text-gray-600 leading-relaxed">
+                        <p class="mb-4">
+                            Hoy, JIBACAM es un movimiento vibrante que ha
+                            extendido su obra a más de 15 países, incluyendo
+                            Venezuela, España, Cuba y Bolivia. Hemos
+                            evolucionado para convertirnos en el brazo
+                            ejecutor de la <strong>Conferencia Wesleyana
+                                Iberoamericana</strong>.
+                        </p>
+                        <p>
+                            Con proyectos transculturales activos en África
+                            y Asia, trabajamos con pasión para alcanzar las
+                            naciones, demostrando que con fe y unidad, no
+                            existen límites geográficos.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="relative w-full h-80 md:h-[400px] rounded-3xl overflow-hidden shadow-lg group order-1 md:order-2">
+                    <img src="assets/jibacam-together.jpeg" alt="Actualidad"
+                        class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PARA QUÉ EXISTE JIBACAM -->
+    <section class="relative z-0 py-20 px-6 bg-slate-50">
+        <div class="absolute inset-0 z-0">
+            <img src="assets/missions2.jpg" alt="Background" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-[#0a4393]/90 backdrop-blur-[2px]"></div>
+        </div>
+        <div class="relative z-10 max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <div class="reveal md:col-span-7">
+                    <h2 class="text-4xl font-black uppercase tracking-tight text-white mb-8">
+                        ¿Para qué existe Jibacam?
                     </h2>
-                    <div
-                        class="h-1.5 w-24 bg-[#1965e9] mx-auto mt-6 rounded-full"></div>
-                    <p class="text-slate-500 mt-6 text-lg font-light">
-                        Nuestro trabajo en acción para el avance de la obra
-                        misionera.
-                    </p>
-                </div>
-
-                <div class="reveal grid md:grid-cols-3 gap-8 lg:gap-10">
-                    <div
-                        class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 group">
-                        <div class="overflow-hidden">
-                            <img
-                                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop"
-                                class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
-                                alt="Formación" />
-                        </div>
-                        <div class="p-8">
-                            <h4
-                                class="text-xl font-black text-slate-900 mb-3 group-hover:text-[#1965e9] transition-colors duration-300">
-                                Capacitación y Formación
-                            </h4>
-                            <p
-                                class="text-slate-600 font-light leading-relaxed">
-                                Formamos líderes con herramientas teológicas,
-                                prácticas y
-                                humanas para impactar su entorno y el campo
-                                misionero.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 group">
-                        <div class="overflow-hidden">
-                            <img
-                                src="assets/missionarybases2.jpg"
-                                class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
-                                alt="Misión" />
-                        </div>
-                        <div class="p-8">
-                            <h4
-                                class="text-xl font-black text-slate-900 mb-3 group-hover:text-[#1965e9] transition-colors duration-300">
-                                Gestión de Bases Misioneras
-                            </h4>
-                            <p
-                                class="text-slate-600 font-light leading-relaxed">
-                                Apoyamos proyectos misioneros, sociales y de
-                                discipulado
-                                adaptados a las necesidades reales de cada
-                                cultura.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 group">
-                        <div class="overflow-hidden">
-                            <img
-                                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800&auto=format&fit=crop"
-                                class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
-                                alt="Asesoría" />
-                        </div>
-                        <div class="p-8">
-                            <h4
-                                class="text-xl font-black text-slate-900 mb-3 group-hover:text-[#1965e9] transition-colors duration-300">
-                                Movilización y Asesoría
-                            </h4>
-                            <p
-                                class="text-slate-600 font-light leading-relaxed">
-                                Acompañamos iglesias a desarrollar visión
-                                misionera, planes de
-                                trabajo efectivos y compromiso global.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SOBRE NOSOTROS -->
-        <section class="pt-24 bg-gray-200">
-            <div class="reveal max-w-6xl mx-auto px-6 text-center mb-16">
-                <h2
-                    class="text-4xl md:text-5xl font-black uppercase tracking-tight text-slate-900">
-                    Sobre Nosotros
-                </h2>
-                <div
-                    class="h-1.5 w-24 bg-[#1965e9] mx-auto mt-6 rounded-full"></div>
-            </div>
-
-            <div class="reveal bg-stone-150 pb-20 px-6">
-                <div
-                    class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center reveal">
-                    <div
-                        class="flex flex-col justify-center order-2 md:order-1">
-                        <h3
-                            class="text-3xl font-black mb-6 text-slate-900">NUESTRA
-                            HISTORIA</h3>
-                        <div
-                            class="prose prose-lg text-gray-600 leading-relaxed">
-                            <p class="mb-4">
-                                Nuestras raíces se remontan a 1843 en Nueva
-                                York, con una intensa pasión por la santidad y
-                                las misiones. Tras décadas de expansión en
-                                África e Iberoamérica, en 1968 nace la
-                                <strong>Iglesia Wesleyana (The Wesleyan
-                                    Church)</strong> mediante la unión de dos
-                                organizaciones históricas.
-                            </p>
-                            <p>
-                                Entre 1904 y 1959, la semilla fue plantada en
-                                Perú, México, Brasil, Colombia, Puerto Rico y
-                                Honduras, estableciendo un legado de fe que
-                                superó fronteras y desafíos culturales.
-                            </p>
-                        </div>
-                    </div>
-                    <div
-                        class="relative w-full h-80 md:h-[400px] rounded-3xl overflow-hidden shadow-lg group order-1 md:order-2">
-                        <img src="assets/wesleyan.jpeg" alt="Orígenes"
-                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="reveal bg-gray-50 py-20 px-6">
-                <div
-                    class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center reveal">
-                    <div
-                        class="relative w-full h-80 md:h-[400px] rounded-3xl overflow-hidden shadow-lg group">
-                        <img src="assets/first-conference.png" alt="Congresos"
-                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                    </div>
-                    <div class="flex flex-col justify-center">
-                        <h3
-                            class="text-3xl font-black mb-6 text-slate-900">NUESTRO
-                            DESARROLLO</h3>
-                        <div
-                            class="prose prose-lg text-gray-600 leading-relaxed">
-                            <p class="mb-4">
-                                El año 1996 marcó un punto de inflexión con el
-                                Congreso de Misiones en Puerto Rico. Bajo el
-                                lema "Pídeme y te daré las naciones", se forjó
-                                un espíritu de unidad que impulsó nuevos campos
-                                en Panamá, Nicaragua y Chile.
-                            </p>
-                            <p>
-                                En 1999, durante el IV Congreso en Bogotá, se
-                                formalizó oficialmente la
-                                <strong>JIBACAM</strong>. Este movimiento
-                                consolidó la visión de una iglesia latina
-                                enviando misioneros a lugares tan lejanos como
-                                Guinea Ecuatorial, África.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="reveal bg-stone-200/80 py-20 px-6">
-                <div
-                    class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center reveal">
-                    <div
-                        class="flex flex-col justify-center order-2 md:order-1">
-                        <h3
-                            class="text-3xl font-black mb-6 text-slate-900">JIBACAM
-                            HOY</h3>
-                        <div
-                            class="prose prose-lg text-gray-600 leading-relaxed">
-                            <p class="mb-4">
-                                Hoy, JIBACAM es un movimiento vibrante que ha
-                                extendido su obra a más de 15 países, incluyendo
-                                Venezuela, España, Cuba y Bolivia. Hemos
-                                evolucionado para convertirnos en el brazo
-                                ejecutor de la <strong>Conferencia Wesleyana
-                                    Iberoamericana</strong>.
-                            </p>
-                            <p>
-                                Con proyectos transculturales activos en África
-                                y Asia, trabajamos con pasión para alcanzar las
-                                naciones, demostrando que con fe y unidad, no
-                                existen límites geográficos.
-                            </p>
-                        </div>
-                    </div>
-                    <div
-                        class="relative w-full h-80 md:h-[400px] rounded-3xl overflow-hidden shadow-lg group order-1 md:order-2">
-                        <img src="assets/jibacam-together.jpeg" alt="Actualidad"
-                            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- PARA QUÉ EXISTE JIBACAM -->
-        <section class="relative z-0 py-20 px-6 bg-slate-50">
-            <div class="absolute inset-0 z-0">
-                <img
-                    src="assets/missions2.jpg"
-                    alt="Background"
-                    class="w-full h-full object-cover" />
-                <div
-                    class="absolute inset-0 bg-[#0a4393]/90 backdrop-blur-[2px]"></div>
-            </div>
-            <div class="relative z-10 max-w-6xl mx-auto">
-                <div class="grid md:grid-cols-12 gap-12 items-center">
-                    <div class="reveal md:col-span-7">
-                        <h2
-                            class="text-4xl font-black uppercase tracking-tight text-white mb-8">
-                            ¿Para qué existe Jibacam?
-                        </h2>
-                        <div
-                            class="prose prose-lg text-gray-200 leading-relaxed">
-                            <p class="mb-2 text-lg">
-                                Existimos para <b>impulsar, promover y concienciar
+                    <div class="prose prose-lg text-gray-200 leading-relaxed">
+                        <p class="mb-2 text-lg">
+                            Existimos para <b>impulsar, promover y concienciar
                                 la obra
                                 misionera en toda la Iglesia Wesleyana de
                                 Iberoamérica y el
                                 Caribe</b>. Nuestro sueño es transformar “campos
-                                misioneros” en una
-                                poderosa “fuerza misionera” latina que lleve el
-                                mensaje de
-                                salvación, santidad y transformación a los no
-                                alcanados,
-                                cumpliendo la Gran Comisión en nuestro contexto
-                                cultural.
-                            </p>
-                            <p class="mb-2 text-lg">
-                                <b>Nuestra meta es unificar un plan de acción,
+                            misioneros” en una
+                            poderosa “fuerza misionera” latina que lleve el
+                            mensaje de
+                            salvación, santidad y transformación a los no
+                            alcanados,
+                            cumpliendo la Gran Comisión en nuestro contexto
+                            cultural.
+                        </p>
+                        <p class="mb-2 text-lg">
+                            <b>Nuestra meta es unificar un plan de acción,
                                 comprometiendo a los
                                 Superintendentes buscando líderes misionales y
                                 que cada país
                                 descubra llamados en las misiones y los entrenen
                                 e involucren en
                                 dar, orar e ir</b>.
-                            </p>
-                            <p class="text-lg">
-                                <b>Este movimiento ha sido clave para que la
+                        </p>
+                        <p class="text-lg">
+                            <b>Este movimiento ha sido clave para que la
                                 Iglesia Wesleyana
                                 crezca de unos pocos países a más de 20 naciones
                                 en las últimas
                                 décadas, impulsada principalmente por líderes y
                                 misioneros
                                 iberoamericanos.</b>
-                            </p>
-                        </div>
+                        </p>
                     </div>
+                </div>
 
+                <div
+                    class="reveal md:col-span-5 bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <h4 class="font-bold text-xl mb-6 text-slate-800">
+                        Hitos principales
+                    </h4>
+                    <ul class="space-y-6 text-gray-600">
+                        <li class="flex gap-4 items-start">
+                            <span class="font-black text-xl text-[#1965e9] mt-0.5">1996</span>
+                            <span><strong>Primera Conferencia.</strong>
+                                Inicia el movimiento en
+                                Puerto Rico.</span>
+                        </li>
+                        <li class="flex gap-4 items-start">
+                            <span class="font-black text-xl text-[#1965e9] mt-0.5">1999</span>
+                            <span><strong>Nacimiento oficial.</strong> Se
+                                formaliza JIBACAM en
+                                Bogotá.</span>
+                        </li>
+                        <li class="flex gap-4 items-start">
+                            <span class="font-black text-xl text-[#1965e9] mt-0.5">2006</span>
+                            <span><strong>Confraternidad
+                                    Iberoamericana.</strong> Consolidación
+                                regional en Chía.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JUNTA JIBACAM -->
+    <section class="relative z-10 pt-12 pb-24 px-6 bg-stone-100/0">
+        <img src="assets/jibacam-blackLogo.png" alt="Decoración de fondo"
+            class="absolute top-0 left-0 w-64 md:w-96 opacity-10 pointer-events-none z-0 -translate-x-1/4 -translate-y-1/2" />
+        <div class="relative max-w-7xl mx-auto z-10">
+            <div class="mb-20 text-center reveal">
+                <img src="assets/jibacam-logo.png" class="w-24 mx-auto mb-4">
+                <h2 class="text-4xl md:text-5xl font-black tracking-tight text-slate-900 mb-4">
+                    JUNTA JIBACAM
+                </h2>
+                <div class="h-1.5 w-24 bg-[#1965e9] mx-auto rounded-full mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+                <div
+                    class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
                     <div
-                        class="reveal md:col-span-5 bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-                        <h4 class="font-bold text-xl mb-6 text-slate-800">
-                            Hitos principales
+                        class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-yellow-400 group-hover:border-yellow-300 shadow-lg transition-colors duration-300">
+                        <img src="assets/pr-edgar2.jpg" alt="Rvdo. Edgar Rueda"
+                            class="w-full h-full object-cover scale-150 transition-transform duration-700 ease-out group-hover:scale-[1.6]" />
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-black text-slate-900 tracking-tight">
+                            RVDO. EDGAR RUEDA
                         </h4>
-                        <ul class="space-y-6 text-gray-600">
-                            <li class="flex gap-4 items-start">
-                                <span
-                                    class="font-black text-xl text-[#1965e9] mt-0.5">1996</span>
-                                <span><strong>Primera Conferencia.</strong>
-                                    Inicia el movimiento en
-                                    Puerto Rico.</span>
-                            </li>
-                            <li class="flex gap-4 items-start">
-                                <span
-                                    class="font-black text-xl text-[#1965e9] mt-0.5">1999</span>
-                                <span><strong>Nacimiento oficial.</strong> Se
-                                    formaliza JIBACAM en
-                                    Bogotá.</span>
-                            </li>
-                            <li class="flex gap-4 items-start">
-                                <span
-                                    class="font-black text-xl text-[#1965e9] mt-0.5">2006</span>
-                                <span><strong>Confraternidad
-                                        Iberoamericana.</strong> Consolidación
-                                    regional en Chía.</span>
-                            </li>
-                        </ul>
+                        <p class="text-[#1965e9] font-black">DIRECTOR</p>
+                        <p class="text-slate-600 mt-1 leading-relaxed text-base">
+                            20 años de experiencia en misiones, capacitado
+                            en traducción
+                            Bíblica, estudios en Linguística, antropología y
+                            misionología.
+                        </p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- JUNTA JIBACAM -->
-        <section class="relative z-10 pt-12 pb-24 px-6 bg-stone-100/0">
-            <img
-                src="assets/jibacam-blackLogo.png"
-                alt="Decoración de fondo"
-                class="absolute top-0 left-0 w-64 md:w-96 opacity-10 pointer-events-none z-0 -translate-x-1/4 -translate-y-1/2" />
-            <div class="relative max-w-7xl mx-auto z-10">
-                <div class="mb-20 text-center reveal">
-                    <img src="assets/jibacam-logo.png"
-                        class="w-24 mx-auto mb-4">
-                    <h2
-                        class="text-4xl md:text-5xl font-black tracking-tight text-slate-900 mb-4">
-                        JUNTA JIBACAM
-                    </h2>
-                    <div
-                        class="h-1.5 w-24 bg-[#1965e9] mx-auto rounded-full mt-6"></div>
                 </div>
 
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+                    class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
                     <div
-                        class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
-                        <div
-                            class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-yellow-400 group-hover:border-yellow-300 shadow-lg transition-colors duration-300">
-                            <img
-                                src="assets/pr-edgar2.jpg"
-                                alt="Rvdo. Edgar Rueda"
-                                class="w-full h-full object-cover scale-150 transition-transform duration-700 ease-out group-hover:scale-[1.6]" />
-                        </div>
-                        <div>
-                            <h4
-                                class="text-2xl font-black text-slate-900 tracking-tight">
-                                RVDO. EDGAR RUEDA
-                            </h4>
-                            <p
-                                class="text-[#1965e9] font-black">DIRECTOR</p>
-                            <p
-                                class="text-slate-600 mt-1 leading-relaxed text-base">
-                                20 años de experiencia en misiones, capacitado
-                                en traducción
-                                Bíblica, estudios en Linguística, antropología y
-                                misionología.
-                            </p>
-                        </div>
+                        class="w-48 h-48 rounded-full  overflow-hidden mb-8 border-4 border-red-400 group-hover:border-red-500 shadow-lg transition-colors duration-300">
+                        <img src="assets/pr-lucy.jpeg" alt="Rev. Lucy Narvaez"
+                            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
                     </div>
-
-                    <div
-                        class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
-                        <div
-                            class="w-48 h-48 rounded-full  overflow-hidden mb-8 border-4 border-red-400 group-hover:border-red-500 shadow-lg transition-colors duration-300">
-                            <img
-                                src="assets/pr-lucy.jpeg"
-                                alt="Rev. Lucy Narvaez"
-                                class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
-                        </div>
-                        <div>
-                            <h4
-                                class="text-2xl font-black text-slate-900 tracking-tight">
-                                PRA. LUCY NARVÁEZ
-                            </h4>
-                            <p
-                                class="text-[#1965e9] font-black">SECRETARIA</p>
-                            <p
-                                class="text-slate-600 mt-1 leading-relaxed text-base">
-                                Líder comprometida con la gestión adminstrativa
-                                y el fortalecimiento de la obra misionera
-                                regional.
-                            </p>
-                        </div>
+                    <div>
+                        <h4 class="text-2xl font-black text-slate-900 tracking-tight">
+                            PRA. LUCY NARVÁEZ
+                        </h4>
+                        <p class="text-[#1965e9] font-black">SECRETARIA</p>
+                        <p class="text-slate-600 mt-1 leading-relaxed text-base">
+                            Líder comprometida con la gestión adminstrativa
+                            y el fortalecimiento de la obra misionera
+                            regional.
+                        </p>
                     </div>
-
-                    <div
-                        class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
-                        <div
-                            class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-red-500 group-hover:border-red-600 shadow-lg transition-colors duration-300">
-                            <img
-                                src="assets/pr-rodrigo2.jpeg"
-                                alt="Rev. Rodrigo Soto Yefi"
-                                class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
-                        </div>
-                        <div>
-                            <h4
-                                class="text-2xl font-black text-slate-900 tracking-tight">
-                                PR. RODRIGO SOTO YEFI
-                            </h4>
-                            <p
-                                class="text-[#1965e9] font-black">TESORERO</p>
-                            <p
-                                class="text-slate-600 mt-1 leading-relaxed text-base">
-                                Licenciado en Teología. 22 años de ministerio,
-                                docente en la Escuela de Misiones e Institutos
-                                Bíblicos
-                                en Chile.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
-                        <div
-                            class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-red-500 group-hover:border-red-600 shadow-lg transition-colors duration-300">
-                            <img
-                                src="assets/pr-eudilio.jpeg"
-                                alt="Rev. Eudilio Guardia"
-                                class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
-                        </div>
-                        <div>
-                            <h4
-                                class="text-2xl font-black text-slate-900 tracking-tight">
-                                PR. EUDILIO GUARDIA
-                            </h4>
-                            <p
-                                class="text-[#1965e9] font-black">VOCAL</p>
-                            <p
-                                class="text-slate-600 mt-1 leading-relaxed text-base">
-                                Director de Misiones de Panamá, impulsando el
-                                crecimiento
-                                de la Iglesia Wesleyana en Centroamérica.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
-                        <div
-                            class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-emerald-500 group-hover:border-emerald-600 shadow-lg transition-colors duration-300">
-                            <img
-                                src="assets/pr-aryanne3.jpg"
-                                alt="Rev. Aryanne Batista"
-                                class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
-                        </div>
-                        <div>
-                            <h4
-                                class="text-2xl font-black text-slate-900 tracking-tight">
-                                PRA. ARYANNE BATISTA
-                            </h4>
-                            <p
-                                class="text-[#1965e9] font-black">VOCAL</p>
-                            <p
-                                class="text-slate-600 mt-1 leading-relaxed text-base">
-                                Líder misional enfocada en la movilización de
-                                recursos y
-                                formación de nuevos obreros.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
-                        <div
-                            class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-blue-500 group-hover:border-blue-600 shadow-lg transition-colors duration-300">
-                            <img
-                                src="assets/pr-perry2.jpg"
-                                alt="Dr. Perry J. Hubbard"
-                                class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
-                        </div>
-                        <div>
-                            <h4
-                                class="text-2xl font-black text-slate-900 tracking-tight">
-                                DR. PERRY J. HUBBARD
-                            </h4>
-                            <p class="text-[#1965e9] font-black">
-                                MENTOR Y CONSEJERO
-                            </p>
-                            <p
-                                class="text-slate-600 mt-1 leading-relaxed text-base">
-                                Misionero con Global Partners desde 1986,
-                                brindando
-                                sabiduría y guía estratégica a la junta.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- NUESTRO IMPACTO -->
-        <section
-            class="relative py-24 px-6 bg-patron-dark !bg-[#0a4393] overflow-hidden">
-            <svg
-                class="absolute top-0 left-0 w-96 h-96 -ml-24 -mt-24 text-white opacity-[0.03] pointer-events-none"
-                fill="currentColor"
-                viewBox="0 0 24 24">
-                <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
-            </svg>
-            <img
-                src="assets/impact.jpg"
-                class="absolute inset-0 w-full h-full object-cover opacity-[0.09] pointer-events-none z-0"
-                alt="Decoración fondo">
-
-            <svg
-                class="absolute top-0 right-0 w-[500px] h-[500px] -mr-32 -mt-10 text-white opacity-[0.02] pointer-events-none"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="40" stroke-width="0.5" />
-                <circle cx="50" cy="50" r="30" stroke-width="0.5" />
-                <circle cx="50" cy="50" r="20" stroke-width="0.5" />
-                <path
-                    d="M10 50h80M50 10v80M21.7 21.7l56.6 56.6M21.7 78.3l56.6-56.6"
-                    stroke-width="0.5" />
-            </svg>
-
-            <div class="relative max-w-7xl mx-auto z-10">
-                <div class="reveal text-center mb-16 md:mb-20">
-                    <h2
-                        class="text-4xl md:text-5xl font-black tracking-tight text-white">
-                        NUESTRO IMPACTO
-                    </h2>
-                    <div
-                        class="h-1 w-32 bg-gradient-to-r from-yellow-500 via-yellow-300 to-transparent mx-auto mt-5"></div>
                 </div>
 
                 <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
                     <div
-                        class="reveal group relative bg-[#0a1e3a] h-32 rounded-3xl overflow-hidden border border-yellow-500/30 hover:border-yellow-400/60 shadow-[0_0_15px_rgba(234,179,8,0.05)] hover:shadow-[0_0_25px_rgba(234,179,8,0.15)] transition-all duration-500 flex flex-col min-h-[480px]">
-                        <div class="h-1/2 w-full relative overflow-hidden">
-                            <img
-                                src="assets/missionarybases-3.png"
-                                alt="Bases Misioneras"
-                                class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
-                            <div
-                                class="absolute inset-0 bg-gradient-to-b from-transparent from-30% via-[#0a1e3a]/50 to-[#0a1e3a]"></div>
-                        </div>
+                        class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-red-500 group-hover:border-red-600 shadow-lg transition-colors duration-300">
+                        <img src="assets/pr-rodrigo2.jpeg" alt="Rev. Rodrigo Soto Yefi"
+                            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-black text-slate-900 tracking-tight">
+                            PR. RODRIGO SOTO YEFI
+                        </h4>
+                        <p class="text-[#1965e9] font-black">TESORERO</p>
+                        <p class="text-slate-600 mt-1 leading-relaxed text-base">
+                            Licenciado en Teología. 22 años de ministerio,
+                            docente en la Escuela de Misiones e Institutos
+                            Bíblicos
+                            en Chile.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
+                    <div
+                        class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-red-500 group-hover:border-red-600 shadow-lg transition-colors duration-300">
+                        <img src="assets/pr-eudilio.jpeg" alt="Rev. Eudilio Guardia"
+                            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-black text-slate-900 tracking-tight">
+                            PR. EUDILIO GUARDIA
+                        </h4>
+                        <p class="text-[#1965e9] font-black">VOCAL</p>
+                        <p class="text-slate-600 mt-1 leading-relaxed text-base">
+                            Director de Misiones de Panamá, impulsando el
+                            crecimiento
+                            de la Iglesia Wesleyana en Centroamérica.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
+                    <div
+                        class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-emerald-500 group-hover:border-emerald-600 shadow-lg transition-colors duration-300">
+                        <img src="assets/pr-aryanne3.jpg" alt="Rev. Aryanne Batista"
+                            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-black text-slate-900 tracking-tight">
+                            PRA. ARYANNE BATISTA
+                        </h4>
+                        <p class="text-[#1965e9] font-black">VOCAL</p>
+                        <p class="text-slate-600 mt-1 leading-relaxed text-base">
+                            Líder misional enfocada en la movilización de
+                            recursos y
+                            formación de nuevos obreros.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="reveal group cursor-pointer bg-gray-100 p-8 border-2 rounded-2xl text-center flex flex-col items-center">
+                    <div
+                        class="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-blue-500 group-hover:border-blue-600 shadow-lg transition-colors duration-300">
+                        <img src="assets/pr-perry2.jpg" alt="Dr. Perry J. Hubbard"
+                            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-black text-slate-900 tracking-tight">
+                            DR. PERRY J. HUBBARD
+                        </h4>
+                        <p class="text-[#1965e9] font-black">
+                            MENTOR Y CONSEJERO
+                        </p>
+                        <p class="text-slate-600 mt-1 leading-relaxed text-base">
+                            Misionero con Global Partners desde 1986,
+                            brindando
+                            sabiduría y guía estratégica a la junta.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUESTRO IMPACTO -->
+    <section class="relative py-24 px-6 bg-patron-dark !bg-[#0a4393] overflow-hidden">
+        <svg class="absolute top-0 left-0 w-96 h-96 -ml-24 -mt-24 text-white opacity-[0.03] pointer-events-none"
+            fill="currentColor" viewBox="0 0 24 24">
+            <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+        </svg>
+        <img src="assets/impact.jpg"
+            class="absolute inset-0 w-full h-full object-cover opacity-[0.09] pointer-events-none z-0"
+            alt="Decoración fondo">
+
+        <svg class="absolute top-0 right-0 w-[500px] h-[500px] -mr-32 -mt-10 text-white opacity-[0.02] pointer-events-none"
+            fill="none" stroke="currentColor" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="40" stroke-width="0.5" />
+            <circle cx="50" cy="50" r="30" stroke-width="0.5" />
+            <circle cx="50" cy="50" r="20" stroke-width="0.5" />
+            <path d="M10 50h80M50 10v80M21.7 21.7l56.6 56.6M21.7 78.3l56.6-56.6" stroke-width="0.5" />
+        </svg>
+
+        <div class="relative max-w-7xl mx-auto z-10">
+            <div class="reveal text-center mb-16 md:mb-20">
+                <h2 class="text-4xl md:text-5xl font-black tracking-tight text-white">
+                    NUESTRO IMPACTO
+                </h2>
+                <div class="h-1 w-32 bg-gradient-to-r from-yellow-500 via-yellow-300 to-transparent mx-auto mt-5"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div
+                    class="reveal group relative bg-[#0a1e3a] h-32 rounded-3xl overflow-hidden border border-yellow-500/30 hover:border-yellow-400/60 shadow-[0_0_15px_rgba(234,179,8,0.05)] hover:shadow-[0_0_25px_rgba(234,179,8,0.15)] transition-all duration-500 flex flex-col min-h-[480px]">
+                    <div class="h-1/2 w-full relative overflow-hidden">
+                        <img src="assets/missionarybases-3.png" alt="Bases Misioneras"
+                            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
                         <div
-                            class="p-8 flex-1 flex flex-col justify-end -mt-10 relative z-10">
-                            <div
-                                class="text-5xl font-black text-yellow-400 mb-2">8+</div>
-                            <h3
-                                class="text-xl font-black uppercase text-white mb-3">
-                                Bases Misioneras
-                            </h3>
-                            <p class="text-blue-100/70 text-sm leading-relaxed">
-                                Amazonas, Guajira, Uruguay, España, India,
-                                Japón, Asia Sureste y
-                                más fronteras de misión.
-                            </p>
+                            class="absolute inset-0 bg-gradient-to-b from-transparent from-30% via-[#0a1e3a]/50 to-[#0a1e3a]">
                         </div>
                     </div>
+                    <div class="p-8 flex-1 flex flex-col justify-end -mt-10 relative z-10">
+                        <div class="text-5xl font-black text-yellow-400 mb-2">8+</div>
+                        <h3 class="text-xl font-black uppercase text-white mb-3">
+                            Bases Misioneras
+                        </h3>
+                        <p class="text-blue-100/70 text-sm leading-relaxed">
+                            Amazonas, Guajira, Uruguay, España, India,
+                            Japón, Asia Sureste y
+                            más fronteras de misión.
+                        </p>
+                    </div>
+                </div>
 
-                    <div
-                        class="reveal group relative bg-[#0a1e3a] h-32 rounded-3xl overflow-hidden border border-yellow-500/30 hover:border-yellow-400/60 shadow-[0_0_15px_rgba(234,179,8,0.05)] hover:shadow-[0_0_25px_rgba(234,179,8,0.15)] transition-all duration-500 flex flex-col min-h-[480px]">
-                        <div class="h-1/2 w-full relative overflow-hidden">
-                            <img
-                                src="assets/countries.jpg"
-                                alt="Países alcanzados"
-                                class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
-                            <div
-                                class="absolute inset-0 bg-gradient-to-b from-transparent from-30% via-[#0a1e3a]/50 to-[#0a1e3a]"></div>
-                        </div>
+                <div
+                    class="reveal group relative bg-[#0a1e3a] h-32 rounded-3xl overflow-hidden border border-yellow-500/30 hover:border-yellow-400/60 shadow-[0_0_15px_rgba(234,179,8,0.05)] hover:shadow-[0_0_25px_rgba(234,179,8,0.15)] transition-all duration-500 flex flex-col min-h-[480px]">
+                    <div class="h-1/2 w-full relative overflow-hidden">
+                        <img src="assets/countries.jpg" alt="Países alcanzados"
+                            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
                         <div
-                            class="absolute bottom-0 right-0 w-48 h-48 opacity-[0.04] pointer-events-none"
-                            style="
+                            class="absolute inset-0 bg-gradient-to-b from-transparent from-30% via-[#0a1e3a]/50 to-[#0a1e3a]">
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 right-0 w-48 h-48 opacity-[0.04] pointer-events-none" style="
                 background-image: url(&quot;assets/jibacam-logo.png&quot;);
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: bottom right;
               "></div>
 
-                        <div
-                            class="p-8 flex-1 flex flex-col justify-end -mt-10 relative z-10">
-                            <div
-                                class="text-5xl font-black text-yellow-400 mb-2">20+</div>
-                            <h3
-                                class="text-xl font-black uppercase text-white mb-3">Países</h3>
-                            <p class="text-blue-100/70 text-sm leading-relaxed">
-                                Formando misioneros y expandiendo la visión: de
-                                6 a 20 países en
-                                20 años de historia.
-                            </p>
-                        </div>
+                    <div class="p-8 flex-1 flex flex-col justify-end -mt-10 relative z-10">
+                        <div class="text-5xl font-black text-yellow-400 mb-2">20+</div>
+                        <h3 class="text-xl font-black uppercase text-white mb-3">Países</h3>
+                        <p class="text-blue-100/70 text-sm leading-relaxed">
+                            Formando misioneros y expandiendo la visión: de
+                            6 a 20 países en
+                            20 años de historia.
+                        </p>
                     </div>
-
-                    <div
-                        class="reveal group relative bg-[#0a1e3a] h-32 rounded-3xl overflow-hidden border border-yellow-500/30 hover:border-yellow-400/60 shadow-[0_0_15px_rgba(234,179,8,0.05)] hover:shadow-[0_0_25px_rgba(234,179,8,0.15)] transition-all duration-500 flex flex-col min-h-[480px]">
-                        <div class="h-1/2 w-full relative overflow-hidden">
-                            <img
-                                src="https://jibacam.net/wp-content/uploads/2025/03/482959382_640777775338771_3238743090135696225_n.jpg"
-                                alt="Proyectos Transculturales"
-                                class="w-full h-full object-cover object-[50%_30%] transition-transform duration-700 ease-out group-hover:scale-110" />
-                            <div
-                                class="absolute inset-0 bg-gradient-to-b from-transparent from-30% via-[#0a1e3a]/50 to-[#0a1e3a]"></div>
-                        </div>
-                        <div
-                            class="p-8 flex-1 flex flex-col justify-end -mt-10 relative z-10">
-                            <div
-                                class="text-5xl font-black text-yellow-400 mb-2">5+</div>
-                            <h3
-                                class="text-xl font-black uppercase text-white mb-3">
-                                Proyectos Transculturales
-                            </h3>
-                            <p class="text-blue-100/70 text-sm leading-relaxed">
-                                En pleno desarrollo, trabajando codo a codo con
-                                coordinadores
-                                nacionales en cada país.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="reveal group relative bg-[#0a1e3a] rounded-3xl overflow-hidden border border-yellow-500/30 hover:border-yellow-400/60 shadow-[0_0_15px_rgba(234,179,8,0.05)] hover:shadow-[0_0_25px_rgba(234,179,8,0.15)] transition-all duration-500 flex flex-col min-h-[480px]">
-                        <div class="h-1/2 w-full relative overflow-hidden">
-                            <img
-                                src="assets/escuela-de-misiones.jpg"
-                                alt="Escuela de Misiones"
-                                class="w-full h-64 object-cover object-[50%_10%] transition-transform duration-700 ease-out group-hover:scale-110" />
-                            <div
-                                class="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a1e3a]/50 to-[#0a1e3a]"></div>
-                        </div>
-                        <div
-                            class="p-8 flex-1 flex flex-col justify-end -mt-10 relative z-10">
-                            <div class="mb-4">
-                                <span
-                                    class="inline-flex items-center gap-1.5 px-3 py-1 bg-yellow-400/10 border border-yellow-400/30 text-yellow-400 text-xs font-bold uppercase tracking-wider rounded-full">
-                                    <svg
-                                        class="w-3.5 h-3.5"
-                                        fill="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z" />
-                                    </svg>
-                                    Formación
-                                </span>
-                            </div>
-                            <h3
-                                class="text-xl font-black uppercase text-white mb-1">
-                                Escuela de Misiones <span
-                                    class="text-yellow-400">EMJ</span>
-                            </h3>
-                            <p
-                                class="text-blue-100/70 text-sm leading-relaxed mt-2">
-                                Capacitando a la próxima generación de obreros.
-                                Formación 100%
-                                online, con graduados en 2026.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONFERENCIA JIBACAM -->
-        <section id="conferencia-jibacam"
-            class="py-20 md:pb-24 md:pt-12 bg-slate-800 relative overflow-hidden font-sans">
-
-            <div class="absolute inset-0 z-0">
-                <img src="assets/event5.jpg" alt="Fondo decorativo"
-                    class="w-full h-full object-cover opacity-10 mix-blend-overlay" />
-            </div>
-
-            <div class="max-w-6xl mx-auto px-6 relative z-10">
-                <img src="assets/jibacam-text-WhiteLogo.png"
-                    class="reveal w-48 mb-4">
-
-                <div class="reveal text-left mb-16 relative z-10">
-                    <h2
-                        class="text-4xl md:text-6xl font-black uppercase text-white tracking-tight">
-                        CONGRESO<br>
-                        <span class="text-[#3b82f6]">IBEROAMERICANO
-                            2026</span>
-                    </h2>
-                    <p
-                        class="text-slate-300 text-left mt-6 text-lg font-light max-w-2xl leading-relaxed">
-                        Inspirar, equipar y movilizar a la iglesia hacia el
-                        desafío transcultural.
-                        Un tiempo especial diseñado para transformar tu visión
-                        misionera.
-                    </p>
                 </div>
 
                 <div
-                    class="reveal grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch relative z-10">
-
-                    <div
-                        class="lg:col-span-4 relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 min-h-[400px] lg:min-h-full group bg-white/5">
-                        <img src="assets/Afiche-Jibacam2026-6.png" alt="Afiche"
-                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    class="reveal group relative bg-[#0a1e3a] h-32 rounded-3xl overflow-hidden border border-yellow-500/30 hover:border-yellow-400/60 shadow-[0_0_15px_rgba(234,179,8,0.05)] hover:shadow-[0_0_25px_rgba(234,179,8,0.15)] transition-all duration-500 flex flex-col min-h-[480px]">
+                    <div class="h-1/2 w-full relative overflow-hidden">
+                        <img src="https://jibacam.net/wp-content/uploads/2025/03/482959382_640777775338771_3238743090135696225_n.jpg"
+                            alt="Proyectos Transculturales"
+                            class="w-full h-full object-cover object-[50%_30%] transition-transform duration-700 ease-out group-hover:scale-110" />
                         <div
-                            class="absolute inset-0 bg-gradient-to-t from-[#0b1736] via-[#0b1736]/20 to-transparent opacity-90"></div>
-                        <div class="absolute bottom-6 left-6 right-6">
-                            <div
-                                class="flex items-center gap-2 text-slate-300 mb-1 opacity-80">
-                                <svg class="w-4 h-4" fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"><path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2"
-                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2"
-                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                <span
-                                    class="text-[10px] font-bold uppercase tracking-widest">SEDE
-                                    POR CONFIRMAR</span>
-                            </div>
-                            <h3
-                                class="text-white font-black text-2xl uppercase tracking-wide">EDICIÓN
-                                2026</h3>
+                            class="absolute inset-0 bg-gradient-to-b from-transparent from-30% via-[#0a1e3a]/50 to-[#0a1e3a]">
                         </div>
                     </div>
-
-                    <div
-                        class="lg:col-span-8 flex flex-col gap-6 relative z-10">
-
-                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                            <div
-                                class="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col hover:bg-white/10 transition-colors">
-                                <p
-                                    class="text-[10px] text-blue-300 font-bold uppercase tracking-widest mb-1">Fecha</p>
-                                <p
-                                    class="text-sm font-bold text-white uppercase">04-07
-                                    de Noviembre</p>
-                            </div>
-                            <div
-                                class="bg-[#3b82f6]/10 border border-[#3b82f6]/30 rounded-2xl p-4 flex flex-col">
-                                <p
-                                    class="text-[10px] text-blue-400 font-bold uppercase tracking-widest mb-1">Costo</p>
-                                <p class="text-sm font-bold text-white">$220
-                                    USD hasta 30 de Junio<br>$250 USD Julio y Agosto</p>
-                            </div>
-                            <div
-                                class="bg-red-500/10 border border-red-500/20 rounded-2xl p-4 flex flex-col">
-                                <p
-                                    class="text-[10px] text-red-400 font-bold uppercase tracking-widest mb-1">Cierre</p>
-                                <p
-                                    class="text-sm font-bold text-white uppercase">Agosto
-                                    15</p>
-                            </div>
-                        </div>
-
-                        <div
-                            class="relative w-full rounded-3xl overflow-hidden shadow-2xl border border-white/10 aspect-video bg-black/50">
-                            <video class="w-full h-full object-cover" controls
-                                preload="metadata">
-                                <source
-                                    src="assets/jibacam-conferencia-video.mp4"
-                                    type="video/mp4">
-                            </video>
-                        </div>
-
-                        <a href="https://forms.gle/CSu2R1NfN3VwdoaB9"
-                            class="w-full bg-[#3b82f6] hover:bg-blue-600 text-white font-black py-5 rounded-2xl flex items-center justify-center gap-3 transition-all uppercase tracking-widest text-sm shadow-lg">
-                            Registrarme Ahora
-                            <svg class="w-5 h-5" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24"><path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="2"
-                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                        </a>
-
+                    <div class="p-8 flex-1 flex flex-col justify-end -mt-10 relative z-10">
+                        <div class="text-5xl font-black text-yellow-400 mb-2">5+</div>
+                        <h3 class="text-xl font-black uppercase text-white mb-3">
+                            Proyectos Transculturales
+                        </h3>
+                        <p class="text-blue-100/70 text-sm leading-relaxed">
+                            En pleno desarrollo, trabajando codo a codo con
+                            coordinadores
+                            nacionales en cada país.
+                        </p>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- NOTICIAS -->
-        <section class="pt-24 py-12 px-6 bg-slate-50 font-sans">
-            <div class="max-w-6xl mx-auto">
-                <div class="reveal text-center mb-16">
-                    <h2
-                        class="text-4xl md:text-5xl font-black uppercase text-slate-900 tracking-tight">
-                        NOTICIAS
-                    </h2>
-                    <div
-                        class="h-1.5 w-24 bg-[#1965e9] mx-auto mt-6 rounded-full"></div>
-                    <p class="text-slate-500 mt-6 text-lg font-light">
-                        Últimas actualizaciones y testimonios del campo
-                        misionero.
-                    </p>
-                </div>
-
-                <div class="flex flex-wrap justify-center gap-8 lg:gap-10">
-                    <article
-                        class="reveal w-full md:w-[calc(33.333%-2rem)] bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 flex flex-col h-full group">
-                        <a
-                            href="#link-a-tu-noticia-1"
-                            class="block overflow-hidden relative">
+                <div
+                    class="reveal group relative bg-[#0a1e3a] rounded-3xl overflow-hidden border border-yellow-500/30 hover:border-yellow-400/60 shadow-[0_0_15px_rgba(234,179,8,0.05)] hover:shadow-[0_0_25px_rgba(234,179,8,0.15)] transition-all duration-500 flex flex-col min-h-[480px]">
+                    <div class="h-1/2 w-full relative overflow-hidden">
+                        <img src="assets/escuela-de-misiones.jpg" alt="Escuela de Misiones"
+                            class="w-full h-64 object-cover object-[50%_10%] transition-transform duration-700 ease-out group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a1e3a]/50 to-[#0a1e3a]">
+                        </div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col justify-end -mt-10 relative z-10">
+                        <div class="mb-4">
                             <span
-                                class="absolute top-4 left-4 bg-[#1965e9] text-white text-xs font-bold px-3 py-1.5 rounded-full z-10 shadow-md">
-                                Eventos
+                                class="inline-flex items-center gap-1.5 px-3 py-1 bg-yellow-400/10 border border-yellow-400/30 text-yellow-400 text-xs font-bold uppercase tracking-wider rounded-full">
+                                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z" />
+                                </svg>
+                                Formación
                             </span>
-                            <img
-                                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop"
-                                class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
-                                alt="Imagen de la noticia" />
-                        </a>
-
-                        <div class="p-8 flex flex-col flex-grow">
-                            <time
-                                class="text-sm text-slate-400 mb-3 block font-medium">20
-                                Abril, 2026</time>
-
-                            <a href="#conferencia-jibacam" class="block mb-3">
-                                <h4
-                                    class="text-xl font-black uppercase text-slate-900 group-hover:text-[#1965e9] transition-colors duration-300 line-clamp-3">
-                                    Anuncio oficial de Nueva Conferencia
-                                    Iberoamericana 2026
-                                </h4>
-                            </a>
-
-                            <p
-                                class="text-slate-600 font-light leading-relaxed mb-6 line-clamp-3">
-                                Después de 4 años, anunciamos con entusiasmo
-                                nuestra nueva
-                                conferencia de misiones.
-                            </p>
-
-                            <div class="mt-auto pt-5 border-t border-slate-100">
-                                <a
-                                    href="#conferencia-jibacam"
-                                    class="inline-flex items-center text-[#1965e9] font-bold text-sm hover:text-blue-800 transition-colors group/link">
-                                    Leer noticia
-                                    <svg
-                                        class="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2.5"
-                                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
-                                </a>
-                            </div>
                         </div>
-                    </article>
+                        <h3 class="text-xl font-black uppercase text-white mb-1">
+                            Escuela de Misiones <span class="text-yellow-400">EMJ</span>
+                        </h3>
+                        <p class="text-blue-100/70 text-sm leading-relaxed mt-2">
+                            Capacitando a la próxima generación de obreros.
+                            Formación 100%
+                            online, con graduados en 2026.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- PRÓXIMAS ACTIVIDADES -->
-        <section class="px-6 bg-slate-50 font-sans">
-            <div class="max-w-6xl mx-auto">
-                <div
-                    class="reveal flex flex-col md:flex-row justify-between items-end mb-12">
-                    <div>
-                        <h2
-                            class="text-4xl md:text-5xl font-black uppercase text-slate-900 tracking-tight">
-                            Próximas Actividades
-                        </h2>
-                        <div
-                            class="h-1.5 w-24 bg-[#1965e9] mt-6 rounded-full"></div>
-                    </div>
-                    
-                    <a
-                        href="#"
-                        class="hidden md:inline-flex items-center text-[#1965e9] font-bold hover:underline mt-4 md:mt-0">
-                        Ver todo el calendario
-                        <svg
-                            class="w-4 h-4 ml-2"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                    </a>
-                </div>
+    <!-- CONFERENCIA JIBACAM -->
+    <section id="conferencia-jibacam" class="py-20 md:pb-24 md:pt-12 bg-slate-800 relative overflow-hidden font-sans">
 
-                <div class="grid md:grid-cols-3 gap-8">
-            
-            <div class="reveal col-span-full py-20 px-6 flex flex-col items-center justify-center text-center bg-slate-100/50 rounded-3xl border-2 border-dashed border-slate-200">
-                <div class="bg-slate-200 p-5 rounded-full mb-6">
-                    <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                </div>
-                
-                <h3 class="text-2xl font-bold text-slate-400 uppercase tracking-wider">
-                    Sin próximas actividades por el momento
-                </h3>
-                <p class="text-slate-500 mt-2 font-light">
-                    Estamos preparando nuevos eventos para ti. ¡Vuelve pronto!
+        <div class="absolute inset-0 z-0">
+            <img src="assets/event5.jpg" alt="Fondo decorativo"
+                class="w-full h-full object-cover opacity-10 mix-blend-overlay" />
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <img src="assets/jibacam-text-WhiteLogo.png" class="reveal w-48 mb-4">
+
+            <div class="reveal text-left mb-16 relative z-10">
+                <h2 class="text-4xl md:text-6xl font-black uppercase text-white tracking-tight">
+                    CONGRESO<br>
+                    <span class="text-[#3b82f6]">IBEROAMERICANO
+                        2026</span>
+                </h2>
+                <p class="text-slate-300 text-left mt-6 text-lg font-light max-w-2xl leading-relaxed">
+                    Inspirar, equipar y movilizar a la iglesia hacia el
+                    desafío transcultural.
+                    Un tiempo especial diseñado para transformar tu visión
+                    misionera.
                 </p>
             </div>
-            </div>
-    </div>
 
-                <!-- <div class="grid md:grid-cols-3 gap-8">
+            <div class="reveal grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch relative z-10">
+
+                <div
+                    class="lg:col-span-4 relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 min-h-[400px] lg:min-h-full group bg-white/5">
+                    <img src="assets/Afiche-Jibacam2026-6.png" alt="Afiche"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-[#0b1736] via-[#0b1736]/20 to-transparent opacity-90">
+                    </div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <div class="flex items-center gap-2 text-slate-300 mb-1 opacity-80">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span class="text-[10px] font-bold uppercase tracking-widest">SEDE
+                                POR CONFIRMAR</span>
+                        </div>
+                        <h3 class="text-white font-black text-2xl uppercase tracking-wide">EDICIÓN
+                            2026</h3>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-8 flex flex-col gap-6 relative z-10">
+
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div
+                            class="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col hover:bg-white/10 transition-colors">
+                            <p class="text-[10px] text-blue-300 font-bold uppercase tracking-widest mb-1">Fecha</p>
+                            <p class="text-sm font-bold text-white uppercase">04-07
+                                de Noviembre</p>
+                        </div>
+                        <div class="bg-[#3b82f6]/10 border border-[#3b82f6]/30 rounded-2xl p-4 flex flex-col">
+                            <p class="text-[10px] text-blue-400 font-bold uppercase tracking-widest mb-1">Costo</p>
+                            <p class="text-sm font-bold text-white">$220
+                                USD hasta 30 de Junio<br>$250 USD Julio y Agosto</p>
+                        </div>
+                        <div class="bg-red-500/10 border border-red-500/20 rounded-2xl p-4 flex flex-col">
+                            <p class="text-[10px] text-red-400 font-bold uppercase tracking-widest mb-1">Cierre</p>
+                            <p class="text-sm font-bold text-white uppercase">Agosto
+                                15</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="relative w-full rounded-3xl overflow-hidden shadow-2xl border border-white/10 aspect-video bg-black/50">
+                        <video class="w-full h-full object-cover" controls preload="metadata">
+                            <source src="assets/jibacam-conferencia-video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <a href="https://forms.gle/CSu2R1NfN3VwdoaB9"
+                        class="w-full bg-[#3b82f6] hover:bg-blue-600 text-white font-black py-5 rounded-2xl flex items-center justify-center gap-3 transition-all uppercase tracking-widest text-sm shadow-lg">
+                        Registrarme Ahora
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOTICIAS -->
+    <section class="pt-24 py-12 px-6 bg-slate-50 font-sans">
+        <div class="max-w-6xl mx-auto">
+            <div class="reveal text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black uppercase text-slate-900 tracking-tight">
+                    NOTICIAS
+                </h2>
+                <div class="h-1.5 w-24 bg-[#1965e9] mx-auto mt-6 rounded-full"></div>
+                <p class="text-slate-500 mt-6 text-lg font-light">
+                    Últimas actualizaciones y testimonios del campo
+                    misionero.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-8 lg:gap-10">
+                <article
+                    class="reveal w-full md:w-[calc(33.333%-2rem)] bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 flex flex-col h-full group">
+                    <a href="#link-a-tu-noticia-1" class="block overflow-hidden relative">
+                        <span
+                            class="absolute top-4 left-4 bg-[#1965e9] text-white text-xs font-bold px-3 py-1.5 rounded-full z-10 shadow-md">
+                            Eventos
+                        </span>
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop"
+                            class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                            alt="Imagen de la noticia" />
+                    </a>
+
+                    <div class="p-8 flex flex-col flex-grow">
+                        <time class="text-sm text-slate-400 mb-3 block font-medium">20
+                            Abril, 2026</time>
+
+                        <a href="#conferencia-jibacam" class="block mb-3">
+                            <h4
+                                class="text-xl font-black uppercase text-slate-900 group-hover:text-[#1965e9] transition-colors duration-300 line-clamp-3">
+                                Anuncio oficial de Nueva Conferencia
+                                Iberoamericana 2026
+                            </h4>
+                        </a>
+
+                        <p class="text-slate-600 font-light leading-relaxed mb-6 line-clamp-3">
+                            Después de 4 años, anunciamos con entusiasmo
+                            nuestra nueva
+                            conferencia de misiones.
+                        </p>
+
+                        <div class="mt-auto pt-5 border-t border-slate-100">
+                            <a href="#conferencia-jibacam"
+                                class="inline-flex items-center text-[#1965e9] font-bold text-sm hover:text-blue-800 transition-colors group/link">
+                                Leer noticia
+                                <svg class="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRÓXIMAS ACTIVIDADES -->
+    <section class="px-6 bg-slate-50 font-sans">
+        <div class="max-w-6xl mx-auto">
+            <div class="reveal flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-black uppercase text-slate-900 tracking-tight">
+                        Próximas Actividades
+                    </h2>
+                    <div class="h-1.5 w-24 bg-[#1965e9] mt-6 rounded-full"></div>
+                </div>
+
+                <a href="#"
+                    class="hidden md:inline-flex items-center text-[#1965e9] font-bold hover:underline mt-4 md:mt-0">
+                    Ver todo el calendario
+                    <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div
+                    class="reveal col-span-full py-20 px-6 flex flex-col items-center justify-center text-center bg-slate-100/50 rounded-3xl border-2 border-dashed border-slate-200">
+                    <div class="bg-slate-200 p-5 rounded-full mb-6">
+                        <svg class="w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-slate-400 uppercase tracking-wider">
+                        Sin próximas actividades por el momento
+                    </h3>
+                    <p class="text-slate-500 mt-2 font-light">
+                        Estamos preparando nuevos eventos para ti. ¡Vuelve pronto!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="grid md:grid-cols-3 gap-8">
                     <div
                         class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 group relative flex flex-col h-full hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
                         <div class="h-56 relative overflow-hidden">
@@ -1553,120 +1338,91 @@
                         </div>
                     </div>
                 </div> -->
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- CONTACTANOS -->
-        <section class="py-20 bg-white">
-            <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12">
-                <div>
-                    <h2
-                        class="text-4xl font-bold mb-6 text-gray-900">Contáctanos</h2>
-                    <p class="text-gray-600 mb-8 text-lg">
-                        ¿Tienes dudas, necesitas oración o quieres saber más?
-                        Escríbenos,
-                        estamos aquí para ti.
-                    </p>
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <svg
-                                class="w-6 h-6 text-blue-600 mr-4 mt-1"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                            </svg>
-                            <div>
-                                <h4
-                                    class="font-bold text-gray-900">Ubicación</h4>
-                                <p class="text-gray-600">Av. Principal 123,
-                                    Ciudad</p>
-                            </div>
+    <!-- CONTACTANOS -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-4xl font-bold mb-6 text-gray-900">Contáctanos</h2>
+                <p class="text-gray-600 mb-8 text-lg">
+                    ¿Tienes dudas, necesitas oración o quieres saber más?
+                    Escríbenos,
+                    estamos aquí para ti.
+                </p>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-4 mt-1" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                            </path>
+                        </svg>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Ubicación</h4>
+                            <p class="text-gray-600">Av. Principal 123,
+                                Ciudad</p>
                         </div>
-                        <div class="flex items-start">
-                            <svg
-                                class="w-6 h-6 text-blue-600 mr-4 mt-1"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                            </svg>
-                            <div>
-                                <h4
-                                    class="font-bold text-gray-900">Teléfono</h4>
-                                <p class="text-gray-600">+56 9 1234 5678</p>
-                            </div>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-4 mt-1" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                            </path>
+                        </svg>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Teléfono</h4>
+                            <p class="text-gray-600">+56 9 1234 5678</p>
                         </div>
-                        <div class="flex items-start">
-                            <svg
-                                class="w-6 h-6 text-blue-600 mr-4 mt-1"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                            </svg>
-                            <div>
-                                <h4 class="font-bold text-gray-900">Correo</h4>
-                                <p
-                                    class="text-gray-600">contacto@iglesia.com</p>
-                            </div>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-4 mt-1" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Correo</h4>
+                            <p class="text-gray-600">contacto@iglesia.com</p>
                         </div>
                     </div>
                 </div>
-
-                <div class="bg-gray-50 p-8 rounded-2xl">
-                    <form action="https://formspree.io/f/tu_id_aqui" method="POST" class="space-y-4">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
-                            <input
-                                name="nombre"
-                                type="text"
-                                required
-                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none"
-                                placeholder="Tu nombre" />
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
-                            <input
-                                name="email"
-                                type="email"
-                                required
-                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none"
-                                placeholder="tu@correo.com" />
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1">Mensaje / Motivo de Oración</label>
-                            <textarea
-                                name="mensaje"
-                                rows="4"
-                                required
-                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none"
-                                placeholder="¿En qué podemos ayudarte?"></textarea>
-                        </div>
-                        
-                        <button
-                            type="submit"
-                            class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
-                            Enviar Mensaje
-                        </button>
-                    </form>
-                </div>
             </div>
-        </section>
 
-        <script src="https://unpkg.com/scrollreveal"></script>
+            <div class="bg-gray-50 p-8 rounded-2xl">
+                <form action="https://formspree.io/f/tu_id_aqui" method="POST" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                        <input name="nombre" type="text" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none"
+                            placeholder="Tu nombre" />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
+                        <input name="email" type="email" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none"
+                            placeholder="tu@correo.com" />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Mensaje / Motivo de Oración</label>
+                        <textarea name="mensaje" rows="4" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none"
+                            placeholder="¿En qué podemos ayudarte?"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script>
         ScrollReveal().reveal('.reveal', {
             origin: 'bottom',
@@ -1679,52 +1435,81 @@
         });
     </script>
 
-        <script>
-      const carrusel = document.getElementById("carrusel");
-      const slides = carrusel.querySelectorAll(".flex-shrink-0");
-      const prevBtn = document.getElementById("prevSlide");
-      const nextBtn = document.getElementById("nextSlide");
-      const indicators = document.querySelectorAll(".carrusel-indicator");
-      let currentSlide = 0;
+    <script>
+        const carrusel = document.getElementById("carrusel");
+        const slides = carrusel.querySelectorAll(".flex-shrink-0");
+        const prevBtn = document.getElementById("prevSlide");
+        const nextBtn = document.getElementById("nextSlide");
+        const indicators = document.querySelectorAll(".carrusel-indicator");
+        let currentSlide = 0;
 
-      function showSlide(index) {
-        carrusel.style.transform = `translateX(-${index * 100}%)`;
-        indicators.forEach((indicator, i) => {
-          if (i === index) {
-            indicator.classList.add("active", "opacity-100");
-            indicator.classList.remove("opacity-50");
-          } else {
-            indicator.classList.remove("active", "opacity-100");
-            indicator.classList.add("opacity-50");
-          }
+        function showSlide(index) {
+            carrusel.style.transform = `translateX(-${index * 100}%)`;
+            indicators.forEach((indicator, i) => {
+                if (i === index) {
+                    indicator.classList.add("active", "opacity-100");
+                    indicator.classList.remove("opacity-50");
+                } else {
+                    indicator.classList.remove("active", "opacity-100");
+                    indicator.classList.add("opacity-50");
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        nextBtn.addEventListener("click", nextSlide);
+        prevBtn.addEventListener("click", prevSlide);
+
+        indicators.forEach((indicator) => {
+            indicator.addEventListener("click", () => {
+                currentSlide = parseInt(indicator.dataset.slideIndex);
+                showSlide(currentSlide);
+            });
         });
-      }
 
-      function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
+        // Carrusel automático cada 7 segundos
+        setInterval(nextSlide, 7000);
+
+        // Mostrar la primera al iniciar
         showSlide(currentSlide);
-      }
-
-      function prevSlide() {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        showSlide(currentSlide);
-      }
-
-      nextBtn.addEventListener("click", nextSlide);
-      prevBtn.addEventListener("click", prevSlide);
-
-      indicators.forEach((indicator) => {
-        indicator.addEventListener("click", () => {
-          currentSlide = parseInt(indicator.dataset.slideIndex);
-          showSlide(currentSlide);
-        });
-      });
-
-      // Carrusel automático cada 7 segundos
-      setInterval(nextSlide, 7000);
-
-      // Mostrar la primera al iniciar
-      showSlide(currentSlide);
     </script>
-    </body>
+
+    <!-- BURBUJA FLOTANTE: EFECTO CRISTAL -->
+    <a href="#conferencia-jibacam"
+        class="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-50 group flex items-center gap-4 bg-white/80 backdrop-blur-md border border-white/50 p-2 pr-6 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-2xl hover:bg-white transition-all duration-300 hover:-translate-y-1">
+
+        <!-- Ícono circular con gradiente -->
+        <div
+            class="relative flex items-center justify-center w-12 h-12 bg-gradient-to-tr from-[#0a4393] to-[#3b82f6] rounded-full shadow-inner overflow-hidden">
+
+            <svg class="w-6 h-6 text-white relative z-10 transform group-hover:scale-110 transition-transform duration-300"
+                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+
+            <!-- Punto de alerta sutil -->
+            <span class="absolute top-2.5 right-2.5 flex h-2.5 w-2.5 z-20">
+                <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-yellow-400"></span>
+            </span>
+        </div>
+
+        <!-- Contenedor de Texto -->
+        <div class="flex flex-col">
+            <span class="font-black text-slate-800 text-sm md:text-base leading-none">Congreso 2026</span>
+        </div>
+    </a>
+</body>
+
 </html>
